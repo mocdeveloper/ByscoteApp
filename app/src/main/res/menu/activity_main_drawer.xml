@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_home">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="မ်က္ႏွာစာ" />
+
+    </group>
+
+    <group
+        android:id="@+id/group_category"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_category"
+            android:checkable="false"
+            android:icon="@drawable/ic_menu"
+            android:title="က႑မ်ား" />
+
+
+        <item
+            android:id="@+id/nav_category_one"
+            android:title="႐ုပ္ရွင္" />
+        <item
+            android:id="@+id/nav_category_two"
+            android:title="ဇာတ္လမ္းတို" />
+        <item
+            android:id="@+id/nav_category_three"
+            android:title="ေဖ်ာ္ေျဖေရး" />
+
+    </group>
+
+    <group
+        android:id="@+id/group_account"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_account"
+            android:checkable="false"
+            android:icon="@drawable/ic_settings"
+            android:title="အေကာင့္" />
+
+
+        <item android:title="ဆက္လက္ ၾကည့္ရႈမည္" />
+        <item android:title="အေကာင့္မွ ထြက္မည္" />
+        <item android:title="သိရန္အခ်က္မ်ား" />
+
+        <item android:title="လိုက္နာရန္မ်ား" />
+
+    </group>
+
+
+</menu>

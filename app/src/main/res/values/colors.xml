@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#e6e1e1</color>
+    <color name="colorAccent">#9677ff</color>
+
+    <color name="facebook_btn_pressed">#5e8ff6</color>
+    <color name="facebook_btn_normal">#3b5998</color>
+    <color name="facebook_btn_dark">#1a3f73</color>
+
+    <color name="general_background">#1f1933</color>
+
+    <color name="light_blue">#9ed2d6</color>
+    <color name="medium_red">#e72954</color>
+    <color name="yellowy_green">#b7d561</color>
+
+    <color name="tnc_textcolor">#664fb5</color>
+    <color name="tnc_textcolor_pressed">#9677ff</color>
+    <color name="tnc_color">#664fb5</color>
+
+</resources>

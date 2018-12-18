@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "349157593805",
+    "firebase_url": "https://byscoteapp.firebaseio.com",
+    "project_id": "byscoteapp",
+    "storage_bucket": "byscoteapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349157593805:android:7357baa7fca382b3",
+        "android_client_info": {
+          "package_name": "com.moc.byscote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349157593805-r0qag9f7bocs6sbkhnkgnamctfmiceqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJSoMD5U476RKX4v4wgpoA_HSKEXdGoDE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

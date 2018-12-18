@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_background"
+    tools:context="com.moc.byscote.LoginActivity"
+    android:id="@+id/login_root">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="290dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/login_bg"
+                android:scaleType="centerCrop"
+                android:cropToPadding="true"
+                android:adjustViewBounds="true" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="-30dp"
+                    android:src="@drawable/big_logo_text"
+                    android:scaleType="centerInside"
+                    android:cropToPadding="true"/>
+                <TextView
+                    android:id="@+id/login_app_description_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="ေနာက္ဆံုးေပၚ အေရွ႔တုိင္းရုပ္ရွင္မ်ား၊"
+                    android:textSize="@dimen/app_description_size"
+                    android:layout_marginBottom="@dimen/small_text_gap"/>
+                <TextView
+                    android:id="@+id/login_app_description_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="ရုပ္သံရႈိးပြဲမ်ား ႏွင့္ မ်ားစြာေသာ"
+                    android:textSize="@dimen/app_description_size"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin"
+            android:background="@color/general_background">
+
+            <LinearLayout
+                style="@style/Login_AppFeature_Item">
+                <ImageView
+                    style="@style/BulletPoint"
+                    android:src="@drawable/bulletpoint_1"/>
+                <TextView
+                    style="@style/Login_AppFeature_Text"
+                    android:text="@string/login_info_1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Login_AppFeature_Item">
+            <ImageView
+                style="@style/BulletPoint"
+                android:src="@drawable/bulletpoint_2"/>
+            <TextView
+                style="@style/Login_AppFeature_Text"
+                android:text="@string/login_info_2"/>
+        </LinearLayout>
+
+            <LinearLayout
+                style="@style/Login_AppFeature_Item">
+                <ImageView
+                    style="@style/BulletPoint"
+                    android:src="@drawable/bulletpoint_3"/>
+                <TextView
+                    style="@style/Login_AppFeature_Text"
+                    android:text="@string/login_info_3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Login_AppFeature_Item">
+                <ImageView
+                    style="@style/BulletPoint"
+                    android:src="@drawable/bulletpoint_4"/>
+                <TextView
+                    style="@style/Login_AppFeature_Text"
+                    android:text="@string/login_info_4"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Login_AppFeature_Item">
+                <ImageView
+                    style="@style/BulletPoint"
+                    android:src="@drawable/bulletpoint_5"/>
+                <TextView
+                    style="@style/Login_AppFeature_Text"
+                    android:text="@string/login_info_5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/login_btn_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/loginbtn_height"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/loginbtn_margin"
+                android:padding="0dp"
+                android:clickable="true">
+                <TextView
+                    android:id="@+id/login_txt_fb_icon"
+                    android:layout_width="@dimen/loginbtn_height"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/fa_facebook"
+                    android:textSize="@dimen/loginbtn_icon_size"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/facebook_btn"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/general_margin"
+                    android:gravity="center_vertical"
+                    android:text="@string/login_with_facebook"
+                    android:textSize="@dimen/loginbtn_text_size"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/facebook_btn"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/login_txt_tnc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/tnc"
+                android:textColor="@color/tnc_color"
+                android:clickable="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/login_webview"
+        android:visibility="gone"></WebView>
+</FrameLayout>

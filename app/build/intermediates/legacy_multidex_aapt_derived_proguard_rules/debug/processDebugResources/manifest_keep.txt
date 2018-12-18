@@ -1,0 +1,2 @@
+# Referenced at /Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:24
+-keep class com.moc.byscote.ByscoteApp { <init>(...); }

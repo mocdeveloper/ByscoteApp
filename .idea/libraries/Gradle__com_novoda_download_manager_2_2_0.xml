@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.novoda:download-manager-2.2.0">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/download-manager-2.2.0.aar/d2c11e2b94abde8e9866d4c05fad8873/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/download-manager-2.2.0.aar/d2c11e2b94abde8e9866d4c05fad8873/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/download-manager-2.2.0.aar/d2c11e2b94abde8e9866d4c05fad8873/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.novoda/download-manager/2.2.0/c18247ef3d21f5773fac4e25a557d20fa6e42ce6/download-manager-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

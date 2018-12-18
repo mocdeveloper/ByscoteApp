@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Wed Dec 12 15:21:25 MMT 2018
+1.base=/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=ASSET
+0.path=fonts/fontawesome-webfont.ttf
+0.set=ASSET
+0.base=/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
+1.path=fonts/zawgyi.ttf
