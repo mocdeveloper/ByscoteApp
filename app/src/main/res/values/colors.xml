@@ -4,9 +4,9 @@
     <color name="colorPrimaryDark">#e6e1e1</color>
     <color name="colorAccent">#9677ff</color>
 
-    <color name="facebook_btn_pressed">#5e8ff6</color>
+    <color name="facebook_btn_pressed">#4267b2</color>
     <color name="facebook_btn_normal">#3b5998</color>
-    <color name="facebook_btn_dark">#1a3f73</color>
+    <color name="facebook_btn_dark">#365899</color>
 
     <color name="general_background">#1f1933</color>
 

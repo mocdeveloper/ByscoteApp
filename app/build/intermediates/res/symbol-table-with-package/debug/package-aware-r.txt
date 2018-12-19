@@ -233,6 +233,7 @@ attr drawableSize
 attr drawerArrowStyle
 attr dropDownListViewStyle
 attr dropdownListPreferredItemHeight
+attr dsv_orientation
 attr editTextBackground
 attr editTextColor
 attr editTextStyle
@@ -1149,6 +1150,11 @@ drawable bulletpoint_2
 drawable bulletpoint_3
 drawable bulletpoint_4
 drawable bulletpoint_5
+drawable button_background
+drawable button_focus
+drawable button_press
+drawable button_press2
+drawable button_unfocused
 drawable com_facebook_auth_dialog_background
 drawable com_facebook_auth_dialog_cancel_background
 drawable com_facebook_auth_dialog_header_background
@@ -1444,7 +1450,6 @@ id icon_group
 id icon_only
 id ifRoom
 id image
-id imageSlider
 id imageView
 id img_category
 id img_left_menu
@@ -1513,6 +1518,7 @@ id parent
 id parentPanel
 id parent_matrix
 id percent
+id picker
 id pin
 id progress_bar
 id progress_circular
@@ -1740,6 +1746,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout pager_list_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -1775,7 +1782,10 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap ic_user
 mipmap ic_user_account
+mipmap ic_view_all
 mipmap new_icon
+mipmap slider1
+mipmap three_dots
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1873,6 +1883,8 @@ string download_notification_content_completed
 string download_notification_content_deleted
 string download_notification_content_error
 string download_notification_content_progress
+string dsv_ex_msg_adapter_wrong_recycler
+string dsv_ex_msg_dont_set_lm
 string exo_controls_fastforward_description
 string exo_controls_fullscreen_description
 string exo_controls_next_description
@@ -2509,6 +2521,7 @@ styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable DefaultTimeBar ad_marker_color ad_marker_width bar_height buffered_color played_ad_marker_color played_color scrubber_color scrubber_disabled_size scrubber_dragged_size scrubber_drawable scrubber_enabled_size touch_target_height unplayed_color
 styleable DesignTheme bottomSheetDialogTheme bottomSheetStyle
+styleable DiscreteScrollView dsv_orientation
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
 styleable FloatingActionButton backgroundTint backgroundTintMode borderWidth elevation fabCustomSize fabSize hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor showMotionSpec useCompatPadding
 styleable FloatingActionButton_Behavior_Layout behavior_autoHide

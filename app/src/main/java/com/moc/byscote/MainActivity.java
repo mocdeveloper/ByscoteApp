@@ -59,8 +59,8 @@ public class MainActivity extends AppCompatActivity
     ExpandableListAdapter expandableListAdapter;
     ExpandableListView expandableListView;
     List<MenuModel> headerList = new ArrayList<>();
-    ImageView img_left_menu;
-    DrawerLayout drawer;
+   // ImageView img_left_menu;
+    public static DrawerLayout drawer;
     HashMap<MenuModel, List<MenuModel>> childList = new HashMap<>();
     RecyclerView recyclerview;
     public static ArrayList<CategoryList> Categories_List;
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        img_left_menu = findViewById(R.id.img_left_menu);
+     //   img_left_menu = findViewById(R.id.img_left_menu);
         expandableListView = findViewById(R.id.expandableListView);
 
         category_list_url = getResources().getString(R.string.base_url) + "movie_category/";
@@ -85,17 +85,17 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        img_left_menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                if (drawer.isDrawerOpen(GravityCompat.START)) {
-                    drawer.closeDrawer(GravityCompat.START);
-                } else {
-                    drawer.openDrawer(GravityCompat.START);
-                }
-            }
-        });
+//        img_left_menu.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                if (drawer.isDrawerOpen(GravityCompat.START)) {
+//                    drawer.closeDrawer(GravityCompat.START);
+//                } else {
+//                    drawer.openDrawer(GravityCompat.START);
+//                }
+//            }
+//        });
 
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         }
@@ -180,7 +180,7 @@ public class MainActivity extends AppCompatActivity
 //
 //        }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
@@ -357,7 +357,7 @@ public class MainActivity extends AppCompatActivity
                             prepareMenuData();
                             populateExpandableList();
 
-                            Log.i("Response", response.toString());
+                            Log.i("Response", response);
 
 
                         } catch (JSONException e) {

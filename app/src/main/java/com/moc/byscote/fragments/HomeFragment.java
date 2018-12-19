@@ -5,6 +5,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.GravityCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -29,6 +30,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.moc.byscote.MainActivity;
 import com.moc.byscote.R;
+import com.moc.byscote.adapter.PagerAdapter;
 import com.moc.byscote.adapter.RVListAdapter;
 import com.moc.byscote.adapter.SeriesListAdapter;
 import com.moc.byscote.adapter.SeriesListAdapter2;
@@ -39,6 +41,8 @@ import com.moc.byscote.model.CategoryList;
 import com.moc.byscote.model.SeriesList;
 import com.smarteist.autoimageslider.SliderLayout;
 import com.smarteist.autoimageslider.SliderView;
+import com.yarolegovich.discretescrollview.DiscreteScrollView;
+import com.yarolegovich.discretescrollview.transform.ScaleTransformer;
 
 import org.apache.http.HttpStatus;
 import org.json.JSONArray;
@@ -49,13 +53,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.moc.byscote.MainActivity.drawer;
+
 public class HomeFragment extends Fragment {
 
     View view;
     ImageView item_image;
     String count_url;
     TextView txt1, txt2, txt3, txt4;
-    SliderLayout sliderLayout;
+   // SliderLayout sliderLayout;
+    DiscreteScrollView scrollView;
     RecyclerView recyclerview, recyclerview2, recyclerview3, recyclerview4, recyclerview5;
     RVListAdapter recycler_adapter;
     SeriesListAdapter recycler_adapter2;
@@ -63,13 +70,14 @@ public class HomeFragment extends Fragment {
     SeriesListAdapter3 recycler_adapter4;
     SeriesListAdapter4 recycler_adapter5;
     SeriesListAdapter5 recycler_adapter6;
-    TextView v1,v2,v3,v4,v5;
+    PagerAdapter pagerAdapter;
+    ImageView v1,v2,v3,v4,v5;
 
     public static ArrayList<CategoryList> Categories_List;
     public static ArrayList<SeriesList> Series_List;
     Fragment fragment = null;
     String category_list_url, series_list_url, category_id, img_path;
-    ;
+    ImageView img_left_menu;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -87,12 +95,34 @@ public class HomeFragment extends Fragment {
 
         category_list_url = getResources().getString(R.string.base_url) + "movie_category/";
 
+        img_left_menu = view.findViewById(R.id.img_left_menu);
 
-        sliderLayout = view.findViewById(R.id.imageSlider);
-        sliderLayout.setIndicatorAnimation(SliderLayout.Animations.SWAP); //set indicator animation by using SliderLayout.Animations. :WORM or THIN_WORM or COLOR or DROP or FILL or NONE or SCALE or SCALE_DOWN or SLIDE and SWAP!!
-        sliderLayout.setScrollTimeInSec(2); //set scroll delay in seconds :
+        scrollView = view.findViewById(R.id.picker);
+        scrollView.setOffscreenItems(0); //Reserve extra space equal to (childSize * count) on each side of the view
+        scrollView.setOverScrollEnabled(true);
+        scrollView.setItemTransitionTimeMillis(100);
+        scrollView.setItemTransformer(new ScaleTransformer.Builder()
+                .setMinScale(0.96f)
+                .build());
 
-        setSliderViews();
+        img_left_menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if (drawer.isDrawerOpen(GravityCompat.START)) {
+                    drawer.closeDrawer(GravityCompat.START);
+                } else {
+                    drawer.openDrawer(GravityCompat.START);
+                }
+            }
+        });
+
+
+//        sliderLayout = view.findViewById(R.id.imageSlider);
+//        sliderLayout.setIndicatorAnimation(SliderLayout.Animations.SWAP); //set indicator animation by using SliderLayout.Animations. :WORM or THIN_WORM or COLOR or DROP or FILL or NONE or SCALE or SCALE_DOWN or SLIDE and SWAP!!
+//        sliderLayout.setScrollTimeInSec(2); //set scroll delay in seconds :
+
+//        setSliderViews();
 
         recyclerview = view.findViewById(R.id.recycler_view);
         recyclerview2 = view.findViewById(R.id.recycler_view2);
@@ -419,78 +449,78 @@ public class HomeFragment extends Fragment {
         }
     }
 
-    private void setSliderViews() {
-
-        for (int i = 0; i <= 4; i++) {
-
-            SliderView sliderView = new SliderView(getActivity());
-            sliderView.setImageScaleType(ImageView.ScaleType.CENTER_CROP);
-
-            switch (i) {
-                case 0: {
-                    sliderView.setImageUrl("http://assets.byscote.myanmaronlinecreations.com/movie/series/S5a967ea6e4c0d5_43661710.jpg");
-                    sliderView.setDescription("ေဖ့ေဖ့ မွတ္စု");
-                    sliderView.setDescriptionTextSize(19);
-                }
-                break;
-                case 1: {
-                    sliderView.setImageUrl("http://assets.byscote.myanmaronlinecreations.com/movie/series/S5a8fc88b205434_67068163.jpg");
-                    sliderView.setDescription("ေလ်ာ္ေၾကး");
-                    sliderView.setDescriptionTextSize(19);
-                }
-                break;
-                case 2: {
-                    sliderView.setImageUrl("http://assets.byscote.myanmaronlinecreations.com/movie/series/S5a967e07299935_63190660.jpg");
-                    sliderView.setDescription("အခ်စ္ဦး နိယာမ");
-                    sliderView.setDescriptionTextSize(19);
-                }
-                break;
-                case 3: {
-                    sliderView.setImageUrl("http://assets.byscote.myanmaronlinecreations.com/movie/series/S5a8fc0838a8148_98887113.jpg");
-                    sliderView.setDescription("တို႔ေက်ာင္းက ေႂကြးေၾကာ္သံ");
-                    sliderView.setDescriptionTextSize(19);
-                }
-                break;
-
-                case 4: {
-                    sliderView.setImageUrl("http://assets.byscote.myanmaronlinecreations.com/movie/series/S5a9682746c9e38_35977495.jpg");
-                    sliderView.setDescription("တရားေသာ ေရွ႕ေန");
-                    sliderView.setDescriptionTextSize(19);
-                }
-                break;
-
-
-            }
-
-
-            final int finalI = i;
-            sliderView.setOnSliderClickListener(new SliderView.OnSliderClickListener() {
-                @Override
-                public void onSliderClick(SliderView sliderView) {
-
-                    // Toast.makeText(MainActivity.this, "This is slider " + (finalI + 1), Toast.LENGTH_SHORT).show();
-                    fragment = new SeasonsListFragment();
-
-                    if (fragment != null) {
-                        FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
-
-                        Bundle args = new Bundle();
-                        args.putString("series_id", Series_List.get(0).getSeries_id());
-                        args.putString("img_series", Series_List.get(0).getImg_src());
-
-                        fragment.setArguments(args);
-                        ft.replace(R.id.mainFrame, fragment).addToBackStack("Series");
-                        ft.commit();
-
-                    }
-
-                }
-            });
-
-            //at last add this view in your layout :
-            sliderLayout.addSliderView(sliderView);
-        }
-    }
+//    private void setSliderViews() {
+//
+//        for (int i = 0; i <= 4; i++) {
+//
+//            SliderView sliderView = new SliderView(getActivity());
+//            sliderView.setImageScaleType(ImageView.ScaleType.CENTER_CROP);
+//
+//            switch (i) {
+//                case 0: {
+//                    sliderView.setImageUrl("http://assets.byscote.myanmaronlinecreations.com/movie/series/S5a967ea6e4c0d5_43661710.jpg");
+//                    sliderView.setDescription("ေဖ့ေဖ့ မွတ္စု");
+//                    sliderView.setDescriptionTextSize(19);
+//                }
+//                break;
+//                case 1: {
+//                    sliderView.setImageUrl("http://assets.byscote.myanmaronlinecreations.com/movie/series/S5a8fc88b205434_67068163.jpg");
+//                    sliderView.setDescription("ေလ်ာ္ေၾကး");
+//                    sliderView.setDescriptionTextSize(19);
+//                }
+//                break;
+//                case 2: {
+//                    sliderView.setImageUrl("http://assets.byscote.myanmaronlinecreations.com/movie/series/S5a967e07299935_63190660.jpg");
+//                    sliderView.setDescription("အခ်စ္ဦး နိယာမ");
+//                    sliderView.setDescriptionTextSize(19);
+//                }
+//                break;
+//                case 3: {
+//                    sliderView.setImageUrl("http://assets.byscote.myanmaronlinecreations.com/movie/series/S5a8fc0838a8148_98887113.jpg");
+//                    sliderView.setDescription("တို႔ေက်ာင္းက ေႂကြးေၾကာ္သံ");
+//                    sliderView.setDescriptionTextSize(19);
+//                }
+//                break;
+//
+//                case 4: {
+//                    sliderView.setImageUrl("http://assets.byscote.myanmaronlinecreations.com/movie/series/S5a9682746c9e38_35977495.jpg");
+//                    sliderView.setDescription("တရားေသာ ေရွ႕ေန");
+//                    sliderView.setDescriptionTextSize(19);
+//                }
+//                break;
+//
+//
+//            }
+//
+//
+//            final int finalI = i;
+//            sliderView.setOnSliderClickListener(new SliderView.OnSliderClickListener() {
+//                @Override
+//                public void onSliderClick(SliderView sliderView) {
+//
+//                    // Toast.makeText(MainActivity.this, "This is slider " + (finalI + 1), Toast.LENGTH_SHORT).show();
+//                    fragment = new SeasonsListFragment();
+//
+//                    if (fragment != null) {
+//                        FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+//
+//                        Bundle args = new Bundle();
+//                        args.putString("series_id", Series_List.get(0).getSeries_id());
+//                        args.putString("img_series", Series_List.get(0).getImg_src());
+//
+//                        fragment.setArguments(args);
+//                        ft.replace(R.id.mainFrame, fragment).addToBackStack("Series");
+//                        ft.commit();
+//
+//                    }
+//
+//                }
+//            });
+//
+//            //at last add this view in your layout :
+//            sliderLayout.addSliderView(sliderView);
+//        }
+//    }
 
 
     public interface OnFragmentInteractionListener {
@@ -540,7 +570,7 @@ public class HomeFragment extends Fragment {
 //                            recycler_adapter.notifyDataSetChanged();
 //                            recyclerview.setAdapter(recycler_adapter);
 
-                            Log.i("Response", response.toString());
+                            Log.i("Response", response);
 
 
                         } catch (JSONException e) {
@@ -646,6 +676,9 @@ public class HomeFragment extends Fragment {
                             recycler_adapter2.notifyDataSetChanged();
                             recyclerview.setAdapter(recycler_adapter2);
 
+                            pagerAdapter = new PagerAdapter(getActivity(), Series_List);
+                            scrollView.setAdapter(pagerAdapter);
+
                             recycler_adapter3 = new SeriesListAdapter2(getActivity(), Series_List);
                             LinearLayoutManager layoutManager2
                                     = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
@@ -671,7 +704,7 @@ public class HomeFragment extends Fragment {
                             recyclerview5.setAdapter(recycler_adapter6);
 
 
-                            Log.i("Response", response.toString());
+                            Log.i("Response", response);
 
 
                         } catch (JSONException e) {

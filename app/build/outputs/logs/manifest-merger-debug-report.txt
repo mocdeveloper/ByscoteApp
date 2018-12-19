@@ -4,6 +4,7 @@ ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main
 INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-85:12
 INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-85:12
 INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-85:12
+MERGED from [com.yarolegovich:discrete-scrollview:1.4.9] /Users/wathon/.gradle/caches/transforms-1/files-1.1/discrete-scrollview-1.4.9.aar/2c38db16f2818aeb5335f0e1097b8300/AndroidManifest.xml:2:1-12:12
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/1d96da50dce28b4642778411dc05e125/AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.volley:volley:1.1.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/adf8c0033170d23134c8e11ceb2286ff/AndroidManifest.xml:2:1-11:12
 MERGED from [com.mindorks.android:prdownloader:0.5.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/prdownloader-0.5.0.aar/8202b15e44f39a80b2b97a7749e4f11c/AndroidManifest.xml:17:1-26:12
@@ -43,9 +44,6 @@ MERGED from [com.novoda:merlin:1.2.0] /Users/wathon/.gradle/caches/transforms-1/
 MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/e8c52a95a3f951a4597c7c0a574d1e40/AndroidManifest.xml:2:1-13:12
 MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6ad8473b8643cd1ad01143783f9bcfaa/AndroidManifest.xml:17:1-22:12
 MERGED from [com.evernote:android-job:1.2.6] /Users/wathon/.gradle/caches/transforms-1/files-1.1/android-job-1.2.6.aar/106631fa68c159cd0f5ed3e951bebd55/AndroidManifest.xml:2:1-65:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/5e336a5051a7a5640251648e00ec572c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/1b4f91fdc25279a7cbf433584fcee3bd/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/586cb8a09779d82573a14ba04a7f59fa/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:transition:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/cb168517ec9dd8aebb59a50656a550a0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.android:facebook-core:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/9728e17520818f9c566e0fe46efd3269/AndroidManifest.xml:21:1-53:12
 MERGED from [com.android.support:exifinterface:27.1.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.0.aar/bedd740e1a54ceab646922a02e2c4088/AndroidManifest.xml:17:1-22:12
@@ -56,14 +54,13 @@ MERGED from [com.google.android.exoplayer:exoplayer-ui:2.9.0] /Users/wathon/.gra
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/exoplayer-core-2.9.0.aar/d592b2db859bf78e7f0e963abbc20fcc/AndroidManifest.xml:17:1-26:12
 MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/49a1e2e1558a97f3fbc8be5b54aa7953/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.persistence:db:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/b59d6299314e5e7abd2086ab61892219/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/5e336a5051a7a5640251648e00ec572c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/1b4f91fdc25279a7cbf433584fcee3bd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/586cb8a09779d82573a14ba04a7f59fa/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:customtabs:27.0.2] /Users/wathon/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/44223a55480c328b509b0a4cc9e9db08/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/776c6e7350a0694e39467e68c1e53d72/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b3a57fa24d7a1290c1986af486d1efa6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:loader:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c18cdda3068a2cd3e02b3e679939860d/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/2f9dae440e1945d5006e6684e9d46fa6/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/71c5fc71466304f56b7c7c92aa815c4f/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/76fc9403ac30674a7e9a73340bf3478f/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ee49b7bcb296b1cbadb63cd7a65abd4c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/776c6e7350a0694e39467e68c1e53d72/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/c62bd0fa97bed3ae766729c827db9d3e/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:viewpager:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/0a868f050ba27064fe73bc282f06f78a/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/2d29a92a160044d2582ac9857b03d302/AndroidManifest.xml:17:1-22:12
@@ -73,8 +70,12 @@ MERGED from [com.android.support:customview:28.0.0] /Users/wathon/.gradle/caches
 MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/3eb969013de0fee2154becfca7a09fe4/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/494d72d410ad5416a3a0c46b05a76271/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a8b13f259ad9689419b3c2d480dcb939/AndroidManifest.xml:17:1-24:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8fc5885a00ea6c0a9cd1bf98d88697eb/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/3749751336a19c3ffcc4f2b8734f290c/AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/2f9dae440e1945d5006e6684e9d46fa6/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/71c5fc71466304f56b7c7c92aa815c4f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/76fc9403ac30674a7e9a73340bf3478f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ee49b7bcb296b1cbadb63cd7a65abd4c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8fc5885a00ea6c0a9cd1bf98d88697eb/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:documentfile:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/965bbbe387078e69e306b5ddd3c4e68b/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/98c0e16201127ea449d15e5976708782/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:print:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/73970279db78b6117d05ab4ce6ff7024/AndroidManifest.xml:17:1-22:12
@@ -373,6 +374,8 @@ uses-sdk
 INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml
 INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml
+MERGED from [com.yarolegovich:discrete-scrollview:1.4.9] /Users/wathon/.gradle/caches/transforms-1/files-1.1/discrete-scrollview-1.4.9.aar/2c38db16f2818aeb5335f0e1097b8300/AndroidManifest.xml:8:5-10:41
+MERGED from [com.yarolegovich:discrete-scrollview:1.4.9] /Users/wathon/.gradle/caches/transforms-1/files-1.1/discrete-scrollview-1.4.9.aar/2c38db16f2818aeb5335f0e1097b8300/AndroidManifest.xml:8:5-10:41
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/1d96da50dce28b4642778411dc05e125/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/1d96da50dce28b4642778411dc05e125/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.volley:volley:1.1.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/adf8c0033170d23134c8e11ceb2286ff/AndroidManifest.xml:7:5-43
@@ -451,12 +454,6 @@ MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/wathon/.gradle/
 MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6ad8473b8643cd1ad01143783f9bcfaa/AndroidManifest.xml:20:5-44
 MERGED from [com.evernote:android-job:1.2.6] /Users/wathon/.gradle/caches/transforms-1/files-1.1/android-job-1.2.6.aar/106631fa68c159cd0f5ed3e951bebd55/AndroidManifest.xml:8:5-10:41
 MERGED from [com.evernote:android-job:1.2.6] /Users/wathon/.gradle/caches/transforms-1/files-1.1/android-job-1.2.6.aar/106631fa68c159cd0f5ed3e951bebd55/AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/5e336a5051a7a5640251648e00ec572c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/5e336a5051a7a5640251648e00ec572c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/1b4f91fdc25279a7cbf433584fcee3bd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/1b4f91fdc25279a7cbf433584fcee3bd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/586cb8a09779d82573a14ba04a7f59fa/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/586cb8a09779d82573a14ba04a7f59fa/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/cb168517ec9dd8aebb59a50656a550a0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/cb168517ec9dd8aebb59a50656a550a0/AndroidManifest.xml:20:5-44
 MERGED from [com.facebook.android:facebook-core:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/9728e17520818f9c566e0fe46efd3269/AndroidManifest.xml:24:5-26:41
@@ -477,22 +474,20 @@ MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/wathon/.gradle/
 MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/49a1e2e1558a97f3fbc8be5b54aa7953/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.persistence:db:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/b59d6299314e5e7abd2086ab61892219/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.persistence:db:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/b59d6299314e5e7abd2086ab61892219/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/5e336a5051a7a5640251648e00ec572c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/5e336a5051a7a5640251648e00ec572c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/1b4f91fdc25279a7cbf433584fcee3bd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/1b4f91fdc25279a7cbf433584fcee3bd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/586cb8a09779d82573a14ba04a7f59fa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/586cb8a09779d82573a14ba04a7f59fa/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:customtabs:27.0.2] /Users/wathon/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/44223a55480c328b509b0a4cc9e9db08/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:customtabs:27.0.2] /Users/wathon/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/44223a55480c328b509b0a4cc9e9db08/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/776c6e7350a0694e39467e68c1e53d72/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/776c6e7350a0694e39467e68c1e53d72/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b3a57fa24d7a1290c1986af486d1efa6/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b3a57fa24d7a1290c1986af486d1efa6/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:loader:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c18cdda3068a2cd3e02b3e679939860d/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:loader:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c18cdda3068a2cd3e02b3e679939860d/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/2f9dae440e1945d5006e6684e9d46fa6/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/2f9dae440e1945d5006e6684e9d46fa6/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/71c5fc71466304f56b7c7c92aa815c4f/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/71c5fc71466304f56b7c7c92aa815c4f/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/76fc9403ac30674a7e9a73340bf3478f/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/76fc9403ac30674a7e9a73340bf3478f/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ee49b7bcb296b1cbadb63cd7a65abd4c/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ee49b7bcb296b1cbadb63cd7a65abd4c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/776c6e7350a0694e39467e68c1e53d72/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/776c6e7350a0694e39467e68c1e53d72/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/c62bd0fa97bed3ae766729c827db9d3e/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/c62bd0fa97bed3ae766729c827db9d3e/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:viewpager:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/0a868f050ba27064fe73bc282f06f78a/AndroidManifest.xml:20:5-44
@@ -511,10 +506,18 @@ MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/wathon/.grad
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/494d72d410ad5416a3a0c46b05a76271/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a8b13f259ad9689419b3c2d480dcb939/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a8b13f259ad9689419b3c2d480dcb939/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8fc5885a00ea6c0a9cd1bf98d88697eb/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8fc5885a00ea6c0a9cd1bf98d88697eb/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/3749751336a19c3ffcc4f2b8734f290c/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/3749751336a19c3ffcc4f2b8734f290c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/2f9dae440e1945d5006e6684e9d46fa6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/2f9dae440e1945d5006e6684e9d46fa6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/71c5fc71466304f56b7c7c92aa815c4f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/71c5fc71466304f56b7c7c92aa815c4f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/76fc9403ac30674a7e9a73340bf3478f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/76fc9403ac30674a7e9a73340bf3478f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ee49b7bcb296b1cbadb63cd7a65abd4c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ee49b7bcb296b1cbadb63cd7a65abd4c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8fc5885a00ea6c0a9cd1bf98d88697eb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8fc5885a00ea6c0a9cd1bf98d88697eb/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:documentfile:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/965bbbe387078e69e306b5ddd3c4e68b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:documentfile:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/965bbbe387078e69e306b5ddd3c4e68b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/98c0e16201127ea449d15e5976708782/AndroidManifest.xml:20:5-44
