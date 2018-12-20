@@ -172,12 +172,12 @@
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ef4b2d7f410ed1026b7121edcfdf343d/res/drawable-hdpi-v4/abc_list_focused_holo.9.png"
     },
     {
-        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable_loader14.png.flat",
-        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/drawable/loader14.png"
-    },
-    {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/color_abc_tint_default.xml.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ef4b2d7f410ed1026b7121edcfdf343d/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable_loader14.png.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/drawable/loader14.png"
     },
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -226,6 +226,10 @@
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable_abc_btn_borderless_material.xml.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ef4b2d7f410ed1026b7121edcfdf343d/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/layout_fragment_payment_online_ooredoo.xml.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/layout/fragment_payment_online_ooredoo.xml"
     },
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/layout_abc_activity_chooser_view.xml.flat",
@@ -548,6 +552,10 @@
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a8b13f259ad9689419b3c2d480dcb939/res/drawable/notification_bg_low.xml"
     },
     {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_pay_online_black.png.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/mipmap-xxhdpi/ic_pay_online_black.png"
+    },
+    {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_exo_edit_mode_logo.png.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/11525ae7b0e2cfb8a71518f6a7595a8c/res/drawable-mdpi-v4/exo_edit_mode_logo.png"
     },
@@ -582,6 +590,10 @@
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light_normal.xml.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/d9eff882d49d082ad4845a6ad876810b/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_shop_pay.png.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/mipmap-xxhdpi/ic_shop_pay.png"
     },
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_settings.png.flat",
@@ -996,6 +1008,10 @@
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ef4b2d7f410ed1026b7121edcfdf343d/res/drawable/tooltip_frame_dark.xml"
     },
     {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/layout_fragment_payment_online_telenor.xml.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/layout/fragment_payment_online_telenor.xml"
+    },
+    {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a8b13f259ad9689419b3c2d480dcb939/res/layout/notification_template_part_chronometer.xml"
     },
@@ -1256,12 +1272,12 @@
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ef4b2d7f410ed1026b7121edcfdf343d/res/layout/abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_disabled.xml.flat",
-        "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/d9eff882d49d082ad4845a6ad876810b/res/drawable/common_google_signin_btn_icon_disabled.xml"
-    },
-    {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ef4b2d7f410ed1026b7121edcfdf343d/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_disabled.xml.flat",
+        "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/d9eff882d49d082ad4845a6ad876810b/res/drawable/common_google_signin_btn_icon_disabled.xml"
     },
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -1312,12 +1328,12 @@
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/11525ae7b0e2cfb8a71518f6a7595a8c/res/drawable-xxhdpi-v4/exo_controls_shuffle.png"
     },
     {
-        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/d9eff882d49d082ad4845a6ad876810b/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
-    },
-    {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_exo_icon_next.xml.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/11525ae7b0e2cfb8a71518f6a7595a8c/res/drawable-anydpi-v21/exo_icon_next.xml"
+    },
+    {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/d9eff882d49d082ad4845a6ad876810b/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -1440,6 +1456,10 @@
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ef4b2d7f410ed1026b7121edcfdf343d/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
     {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_mpu_pay.png.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/mipmap-xxhdpi/ic_mpu_pay.png"
+    },
+    {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_settings.xml.flat",
         "source": "/Users/wathon/Development/android-development/ByscoteApp/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_settings.xml"
     },
@@ -1458,6 +1478,14 @@
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/layout_notification_template_lines_media.xml.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/c62bd0fa97bed3ae766729c827db9d3e/res/layout/notification_template_lines_media.xml"
+    },
+    {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_right.png.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/mipmap-xxhdpi/ic_right.png"
+    },
+    {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/layout_dialog.xml.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/layout/dialog.xml"
     },
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -1518,6 +1546,10 @@
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/anim_design_snackbar_out.xml.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/e20787e7c8f40223eb534c723a4b23c1/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/layout_fragment_payment_online_welink.xml.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/layout/fragment_payment_online_welink.xml"
     },
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -2052,6 +2084,10 @@
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/11525ae7b0e2cfb8a71518f6a7595a8c/res/drawable-xhdpi-v4/exo_controls_shuffle.png"
     },
     {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_welink_logo.png.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/mipmap-xxhdpi/ic_welink_logo.png"
+    },
+    {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_profile_picture_blank_portrait.png.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.38.1.aar/bc575e9e147ec157cccee008a79c51b6/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_portrait.png"
     },
@@ -2276,6 +2312,14 @@
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.38.1.aar/bc575e9e147ec157cccee008a79c51b6/res/drawable-hdpi-v4/com_facebook_tooltip_black_topnub.png"
     },
     {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_qr_sample.png.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/mipmap-xxhdpi/qr_sample.png"
+    },
+    {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_telenor_logo.png.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/mipmap-xxhdpi/ic_telenor_logo.png"
+    },
+    {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_button_send_icon_white.png.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-share-4.38.1.aar/6d1470584c324d5fe73debbb262176c4/res/drawable-mdpi-v4/com_facebook_button_send_icon_white.png"
     },
@@ -2300,12 +2344,20 @@
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ef4b2d7f410ed1026b7121edcfdf343d/res/color-v23/abc_btn_colored_borderless_text_material.xml"
     },
     {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_ooredoo_logo.jpg.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/mipmap-xxhdpi/ic_ooredoo_logo.jpg"
+    },
+    {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_exo_controls_repeat_one.xml.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/11525ae7b0e2cfb8a71518f6a7595a8c/res/drawable-anydpi-v21/exo_controls_repeat_one.xml"
     },
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ef4b2d7f410ed1026b7121edcfdf343d/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/layout_fragment_payment_select.xml.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/layout/fragment_payment_select.xml"
     },
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -2338,6 +2390,10 @@
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/layout_design_layout_tab_icon.xml.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/e20787e7c8f40223eb534c723a4b23c1/res/layout/design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_phone_pay.png.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/mipmap-xxhdpi/ic_phone_pay.png"
     },
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_menu_black.png.flat",
@@ -2492,6 +2548,10 @@
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ef4b2d7f410ed1026b7121edcfdf343d/res/drawable/abc_ic_clear_material.xml"
     },
     {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/layout_fragment_payment_online.xml.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/layout/fragment_payment_online.xml"
+    },
+    {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-v21_abc_list_divider_material.xml.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ef4b2d7f410ed1026b7121edcfdf343d/res/drawable-v21/abc_list_divider_material.xml"
     },
@@ -2534,6 +2594,10 @@
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.38.1.aar/bc575e9e147ec157cccee008a79c51b6/res/drawable-hdpi-v4/com_facebook_tooltip_blue_xout.png"
+    },
+    {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_pay_world_black.png.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/mipmap-xxhdpi/ic_pay_world_black.png"
     },
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable_ic_mtrl_chip_checked_circle.xml.flat",
@@ -2582,6 +2646,10 @@
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_category_two.jpg.flat",
         "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/mipmap-xxhdpi/category_two.jpg"
+    },
+    {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_pay_shop_black.png.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/mipmap-xxhdpi/ic_pay_shop_black.png"
     },
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -2672,6 +2740,10 @@
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/11525ae7b0e2cfb8a71518f6a7595a8c/res/layout/exo_playback_control_view.xml"
     },
     {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_mpu_logo.png.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/mipmap-xxhdpi/ic_mpu_logo.png"
+    },
+    {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.38.1.aar/bc575e9e147ec157cccee008a79c51b6/res/drawable-hdpi-v4/com_facebook_tooltip_black_bottomnub.png"
     },
@@ -2686,6 +2758,10 @@
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/e20787e7c8f40223eb534c723a4b23c1/res/drawable-xxxhdpi-v4/design_ic_visibility_off.png"
+    },
+    {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_123_logo.png.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/mipmap-xxhdpi/ic_123_logo.png"
     },
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
@@ -2948,6 +3024,10 @@
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ef4b2d7f410ed1026b7121edcfdf343d/res/drawable-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/layout_fragment_payment_shop.xml.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/layout/fragment_payment_shop.xml"
+    },
+    {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.38.1.aar/bc575e9e147ec157cccee008a79c51b6/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
@@ -2986,6 +3066,10 @@
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/Users/wathon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ef4b2d7f410ed1026b7121edcfdf343d/res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/layout_fragment_payment_mpu.xml.flat",
+        "source": "/Users/wathon/Development/android-development/ByscoteApp/app/src/main/res/layout/fragment_payment_mpu.xml"
     },
     {
         "merged": "/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_three_dots.png.flat",
