@@ -9,6 +9,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.GravityCompat;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -63,6 +64,8 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import static com.moc.byscote.MainActivity.drawer;
+
 
 public class SeasonsListFragment extends Fragment {
 
@@ -81,6 +84,7 @@ public class SeasonsListFragment extends Fragment {
     String mockey,signature,policy,key_pair_id;
     Batch batch;
     DownloadManager downloadManager;
+    ImageView  img_left_menu;
 
 
     public SeasonsListFragment() {
@@ -109,6 +113,19 @@ public class SeasonsListFragment extends Fragment {
         recyclerview = view.findViewById(R.id.recycler_view);
         recyclerview.setNestedScrollingEnabled(false);
         btn_download = view.findViewById(R.id.btn_download);
+
+        img_left_menu = view.findViewById(R.id.img_left_menu);
+        img_left_menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if (drawer.isDrawerOpen(GravityCompat.START)) {
+                    drawer.closeDrawer(GravityCompat.START);
+                } else {
+                    drawer.openDrawer(GravityCompat.START);
+                }
+            }
+        });
 
         Handler handler = new Handler();
         downloadManager = DownloadManagerBuilder
@@ -253,7 +270,7 @@ public class SeasonsListFragment extends Fragment {
 
                             startActivity(i);
 
-                            Log.i("Response", response.toString());
+                            Log.i("Response", response);
 
 
                         } catch (JSONException e) {
@@ -356,7 +373,7 @@ public class SeasonsListFragment extends Fragment {
                             episodes_list_url = getResources().getString(R.string.base_url)+"movie_category/episodes/"+season_id;
                             callEpisodesList();
 
-                            Log.i("Response", response.toString());
+                            Log.i("Response", response);
 
 
                         } catch (JSONException e) {
@@ -466,7 +483,7 @@ public class SeasonsListFragment extends Fragment {
                             recycler_adapter.notifyDataSetChanged();
                             recyclerview.setAdapter(recycler_adapter);
 
-                            Log.i("Response", response.toString());
+                            Log.i("Response", response);
 
 
                         } catch (JSONException e) {

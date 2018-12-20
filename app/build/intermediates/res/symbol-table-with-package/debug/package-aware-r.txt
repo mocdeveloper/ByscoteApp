@@ -60,6 +60,7 @@ attr actionOverflowButtonStyle
 attr actionOverflowMenuStyle
 attr actionProviderClass
 attr actionViewClass
+attr activeColor
 attr activityChooserViewStyle
 attr ad_marker_color
 attr ad_marker_width
@@ -308,7 +309,9 @@ attr iconifiedByDefault
 attr imageAspectRatio
 attr imageAspectRatioAdjust
 attr imageButtonStyle
+attr inactiveColor
 attr indeterminateProgressStyle
+attr indicatorSize
 attr initialActivityCount
 attr insetForeground
 attr isLightTheme
@@ -657,6 +660,7 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
+color active_indicator
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -737,6 +741,7 @@ color foreground_material_light
 color general_background
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color inactive_indicator
 color light_blue
 color material_blue_grey_800
 color material_blue_grey_900
@@ -975,6 +980,7 @@ dimen hint_alpha_material_dark
 dimen hint_alpha_material_light
 dimen hint_pressed_alpha_material_dark
 dimen hint_pressed_alpha_material_light
+dimen indicator_size
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
@@ -1155,6 +1161,7 @@ drawable button_focus
 drawable button_press
 drawable button_press2
 drawable button_unfocused
+drawable card_background
 drawable com_facebook_auth_dialog_background
 drawable com_facebook_auth_dialog_cancel_background
 drawable com_facebook_auth_dialog_header_background
@@ -1360,6 +1367,7 @@ id center_vertical
 id chains
 id checkbox
 id chronometer
+id circle_indicator_view
 id clip_horizontal
 id clip_vertical
 id collapseActionView
@@ -1719,6 +1727,7 @@ layout exo_simple_player_view
 layout exo_track_selection_dialog
 layout fragment_episodes
 layout fragment_home
+layout fragment_my_account
 layout fragment_player
 layout fragment_seasons
 layout fragment_series
@@ -1777,6 +1786,7 @@ mipmap category_three
 mipmap category_two
 mipmap ic_close
 mipmap ic_close_btn
+mipmap ic_edit
 mipmap ic_episode
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -2531,6 +2541,7 @@ styleable FontFamilyFont android_font android_fontWeight android_fontStyle andro
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
+styleable IndicatorView activeColor inactiveColor indicatorSize
 styleable LinearConstraintLayout android_orientation
 styleable LinearLayoutCompat android_gravity android_orientation android_baselineAligned android_baselineAlignedChildIndex android_weightSum divider dividerPadding measureWithLargestChild showDividers
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight

@@ -22,6 +22,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -37,6 +38,7 @@ import com.android.volley.toolbox.Volley;
 import com.moc.byscote.Util.ExpandableListAdapter;
 import com.moc.byscote.adapter.RVListAdapter;
 import com.moc.byscote.fragments.HomeFragment;
+import com.moc.byscote.fragments.MyAccountFragment;
 import com.moc.byscote.fragments.SeriesListFragment;
 import com.moc.byscote.model.CategoryList;
 import com.moc.byscote.model.MenuModel;
@@ -84,6 +86,7 @@ public class MainActivity extends AppCompatActivity
                 this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
 
 //        img_left_menu.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -258,6 +261,21 @@ public class MainActivity extends AppCompatActivity
                             drawer.closeDrawer(GravityCompat.START);
                         }
                         fragment = new HomeFragment();
+
+                        if (fragment != null) {
+                            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+
+                            ft.replace(R.id.mainFrame, fragment);
+                            ft.commit();
+
+                        }
+
+                    }else if(groupPosition == 3) {
+
+                        if (drawer.isDrawerOpen(GravityCompat.START)) {
+                            drawer.closeDrawer(GravityCompat.START);
+                        }
+                        fragment = new MyAccountFragment();
 
                         if (fragment != null) {
                             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();

@@ -3,6 +3,7 @@ package com.moc.byscote.fragments;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
@@ -53,6 +54,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import io.github.kshitij_jain.indicatorview.IndicatorView;
+
 import static com.moc.byscote.MainActivity.drawer;
 
 public class HomeFragment extends Fragment {
@@ -78,6 +81,7 @@ public class HomeFragment extends Fragment {
     Fragment fragment = null;
     String category_list_url, series_list_url, category_id, img_path;
     ImageView img_left_menu;
+    IndicatorView mIndicatorView;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -96,13 +100,14 @@ public class HomeFragment extends Fragment {
         category_list_url = getResources().getString(R.string.base_url) + "movie_category/";
 
         img_left_menu = view.findViewById(R.id.img_left_menu);
+        mIndicatorView = view.findViewById(R.id.circle_indicator_view);
 
         scrollView = view.findViewById(R.id.picker);
         scrollView.setOffscreenItems(0); //Reserve extra space equal to (childSize * count) on each side of the view
         scrollView.setOverScrollEnabled(true);
         scrollView.setItemTransitionTimeMillis(100);
         scrollView.setItemTransformer(new ScaleTransformer.Builder()
-                .setMinScale(0.96f)
+                .setMinScale(0.9f)
                 .build());
 
         img_left_menu.setOnClickListener(new View.OnClickListener() {
@@ -392,6 +397,13 @@ public class HomeFragment extends Fragment {
         }));
 
 
+        scrollView.addOnItemChangedListener(new DiscreteScrollView.OnItemChangedListener<RecyclerView.ViewHolder>() {
+            @Override
+            public void onCurrentItemChanged(@Nullable RecyclerView.ViewHolder viewHolder, int adapterPosition) {
+                mIndicatorView.setCurrentPage(adapterPosition);
+            }
+        });
+
 
         return view;
 
@@ -676,6 +688,7 @@ public class HomeFragment extends Fragment {
                             recycler_adapter2.notifyDataSetChanged();
                             recyclerview.setAdapter(recycler_adapter2);
 
+                            mIndicatorView.setPageIndicators(Series_List.size());
                             pagerAdapter = new PagerAdapter(getActivity(), Series_List);
                             scrollView.setAdapter(pagerAdapter);
 

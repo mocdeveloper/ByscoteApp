@@ -4,18 +4,18 @@
     android:layout_width="114dp"
     android:layout_height="wrap_content"
     android:layout_margin="4dp"
-    android:background="#414040"
+    android:background="#212121"
     android:elevation="8dp"
     android:orientation="vertical">
 
     <android.support.v7.widget.CardView
         android:layout_width="110dp"
         android:layout_height="148dp"
-        android:elevation="8dp"
+        android:elevation="18dp"
         android:layout_marginLeft="2dp"
         android:layout_marginTop="2dp"
         app:cardBackgroundColor="#ffffff"
-        app:cardCornerRadius="4dp">
+        app:cardCornerRadius="18dp">
 
         <RelativeLayout
             android:layout_width="match_parent"

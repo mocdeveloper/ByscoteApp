@@ -44,6 +44,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.moc.byscote.MainActivity.drawer;
+
 public class SeriesListFragment extends Fragment {
 
     View view;
@@ -52,6 +54,7 @@ public class SeriesListFragment extends Fragment {
     public static ArrayList<SeriesList> Series_List;
     Fragment fragment;
     String series_list_url, category_id;
+    ImageView  img_left_menu ;
 
 
     public SeriesListFragment() {
@@ -105,6 +108,18 @@ public class SeriesListFragment extends Fragment {
             }
         }));
 
+        img_left_menu = view.findViewById(R.id.img_left_menu);
+        img_left_menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if (drawer.isDrawerOpen(GravityCompat.START)) {
+                    drawer.closeDrawer(GravityCompat.START);
+                } else {
+                    drawer.openDrawer(GravityCompat.START);
+                }
+            }
+        });
 
 
         return view;
@@ -197,7 +212,7 @@ public class SeriesListFragment extends Fragment {
                             recycler_adapter.notifyDataSetChanged();
                             recyclerview.setAdapter(recycler_adapter);
 
-                            Log.i("Response", response.toString());
+                            Log.i("Response", response);
 
 
                         } catch (JSONException e) {
