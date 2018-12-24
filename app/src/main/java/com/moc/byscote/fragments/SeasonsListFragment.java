@@ -84,7 +84,6 @@ public class SeasonsListFragment extends Fragment {
     String mockey,signature,policy,key_pair_id;
     Batch batch;
     DownloadManager downloadManager;
-    ImageView  img_left_menu;
 
 
     public SeasonsListFragment() {
@@ -113,19 +112,6 @@ public class SeasonsListFragment extends Fragment {
         recyclerview = view.findViewById(R.id.recycler_view);
         recyclerview.setNestedScrollingEnabled(false);
         btn_download = view.findViewById(R.id.btn_download);
-
-        img_left_menu = view.findViewById(R.id.img_left_menu);
-        img_left_menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                if (drawer.isDrawerOpen(GravityCompat.START)) {
-                    drawer.closeDrawer(GravityCompat.START);
-                } else {
-                    drawer.openDrawer(GravityCompat.START);
-                }
-            }
-        });
 
         Handler handler = new Handler();
         downloadManager = DownloadManagerBuilder

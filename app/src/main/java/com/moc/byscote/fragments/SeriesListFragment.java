@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -50,11 +51,12 @@ public class SeriesListFragment extends Fragment {
 
     View view;
     RecyclerView recyclerview;
-    SeriesListAdapter1 recycler_adapter;
+    SeriesListAdapter recycler_adapter;
     public static ArrayList<SeriesList> Series_List;
     Fragment fragment;
     String series_list_url, category_id;
-    ImageView  img_left_menu ;
+    TextView tv_category_title;
+    String category_title;
 
 
     public SeriesListFragment() {
@@ -71,12 +73,15 @@ public class SeriesListFragment extends Fragment {
         //  item_image = (ImageView) view.findViewById(R.id.btn_item_image);
         getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
+        category_title = getArguments().getString("category_title");
         category_id = getArguments().getString("category_id");
         series_list_url = getResources().getString(R.string.base_url)+"movie_category/series/"+category_id;
 
 
         recyclerview = view.findViewById(R.id.recycler_view);
+        tv_category_title = view.findViewById(R.id.tv_category_title);
 
+        tv_category_title.setText(category_title);
         Series_List = new ArrayList<SeriesList>();
 
         callSeriesList();
@@ -107,20 +112,6 @@ public class SeriesListFragment extends Fragment {
 
             }
         }));
-
-        img_left_menu = view.findViewById(R.id.img_left_menu);
-        img_left_menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                if (drawer.isDrawerOpen(GravityCompat.START)) {
-                    drawer.closeDrawer(GravityCompat.START);
-                } else {
-                    drawer.openDrawer(GravityCompat.START);
-                }
-            }
-        });
-
 
         return view;
 
@@ -207,8 +198,9 @@ public class SeriesListFragment extends Fragment {
 
                             }
 
-                            recycler_adapter = new SeriesListAdapter1(getActivity(),Series_List);
-                            recyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
+                            recycler_adapter = new SeriesListAdapter(getActivity(),Series_List);
+                          //  recyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
+                            recyclerview.setLayoutManager(new GridLayoutManager(getActivity(), 3));
                             recycler_adapter.notifyDataSetChanged();
                             recyclerview.setAdapter(recycler_adapter);
 

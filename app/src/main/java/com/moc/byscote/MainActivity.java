@@ -278,7 +278,7 @@ public class MainActivity extends AppCompatActivity
                         fragment = new MyAccountFragment();
 
                         if (fragment != null) {
-                            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                            FragmentTransaction ft = getSupportFragmentManager().beginTransaction().addToBackStack("My Account");
 
                             ft.replace(R.id.mainFrame, fragment);
                             ft.commit();

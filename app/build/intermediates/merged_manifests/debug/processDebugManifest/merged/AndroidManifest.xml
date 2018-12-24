@@ -79,11 +79,6 @@
         <activity
             android:name="com.moc.byscote.LoginActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <!-- [Start fbshare] -->
@@ -98,6 +93,15 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.moc.byscote.NotificationActivity" />
         <activity android:name="com.moc.byscote.PlayerActivity" />
+        <activity
+            android:name="com.moc.byscote.ByscoteMainActivity"
+            android:label="@string/title_activity_byscote_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <service android:name="com.novoda.downloadmanager.LiteDownloadService" />
 

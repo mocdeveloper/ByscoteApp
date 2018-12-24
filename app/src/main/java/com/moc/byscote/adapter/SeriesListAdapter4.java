@@ -58,15 +58,15 @@ public class SeriesListAdapter4 extends RecyclerView.Adapter<SeriesListAdapter4.
       //  personViewHolder.tv_category.setBackgroundResource(categoryList_Items.get(i).getImg_src());
         if(i==0){
             Picasso.get().load(R.mipmap.a11).into(personViewHolder.img_series);
-            personViewHolder.tv_series_title.setText("First Look");
+            personViewHolder.tv_series_title.setText("Patriot");
         }else if(i==1){
             Picasso.get().load(R.mipmap.a12).into(personViewHolder.img_series);
-            personViewHolder.tv_series_title.setText("Nico");
+            personViewHolder.tv_series_title.setText("MINE");
         }else  if(i==2){
             Picasso.get().load(R.mipmap.a13).into(personViewHolder.img_series);
-            personViewHolder.tv_series_title.setText("Martin Luther");
+            personViewHolder.tv_series_title.setText("Takers");
         }else {
-            Picasso.get().load(seriesList_Items.get(i).getImg_src()).into(personViewHolder.img_series);
+            Picasso.get().load(seriesList_Items.get(i-2).getImg_src()).into(personViewHolder.img_series);
             personViewHolder.tv_series_title.setText(seriesList_Items.get(i).getSeries_name());
         }
 
@@ -91,8 +91,8 @@ public class SeriesListAdapter4 extends RecyclerView.Adapter<SeriesListAdapter4.
 
             super(itemView);
 
-            tv_series_title = (TextView) itemView.findViewById(R.id.tv_series_title);
-            img_series = (ImageView) itemView.findViewById(R.id.img_series);
+            tv_series_title = itemView.findViewById(R.id.tv_series_title);
+            img_series = itemView.findViewById(R.id.img_series);
 
         }
     }

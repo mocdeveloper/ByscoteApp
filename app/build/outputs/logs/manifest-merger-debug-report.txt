@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-85:12
-INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-85:12
-INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-85:12
-INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-85:12
+ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-91:12
+INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-91:12
+INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-91:12
+INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-91:12
 MERGED from [com.yarolegovich:discrete-scrollview:1.4.9] /Users/wathon/.gradle/caches/transforms-1/files-1.1/discrete-scrollview-1.4.9.aar/2c38db16f2818aeb5335f0e1097b8300/AndroidManifest.xml:2:1-12:12
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/1d96da50dce28b4642778411dc05e125/AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.volley:volley:1.1.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/adf8c0033170d23134c8e11ceb2286ff/AndroidManifest.xml:2:1-11:12
@@ -11,14 +11,16 @@ MERGED from [com.mindorks.android:prdownloader:0.5.0] /Users/wathon/.gradle/cach
 MERGED from [com.novoda:download-manager:2.2.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/download-manager-2.2.0.aar/d2c11e2b94abde8e9866d4c05fad8873/AndroidManifest.xml:2:1-25:12
 MERGED from [com.github.Kshitij-Jain:IndicatorView:1.25] /Users/wathon/.gradle/caches/transforms-1/files-1.1/IndicatorView-1.25.aar/04716ddfe3b32c27dc59606a4c90a369/AndroidManifest.xml:2:1-17:12
 MERGED from [com.android.support:design:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/e20787e7c8f40223eb534c723a4b23c1/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.android:facebook-login:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.38.1.aar/bc575e9e147ec157cccee008a79c51b6/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-share:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-share-4.38.1.aar/6d1470584c324d5fe73debbb262176c4/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-common:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/968cbacf73dc9035b86b27f8add925f6/AndroidManifest.xml:21:1-37:12
+MERGED from [com.facebook.android:facebook-login:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.39.0.aar/0d4b99895e8f7e9e61ea8f87c0249597/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-share:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-share-4.39.0.aar/853e6fa0aa4e769cbc25fd9845f22500/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-common:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.39.0.aar/b758fa3d8362c2393ef605ecb812b89e/AndroidManifest.xml:21:1-37:12
 MERGED from [com.android.support:cardview-v7:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/baf2d32ffd41c5edac16a2bc86feba26/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/186e7abf12875d12bc984dd578db5d7c/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:multidex:1.0.3] /Users/wathon/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/3cf3eec4716e357b8d2b7f932fa2dc1b/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ef4b2d7f410ed1026b7121edcfdf343d/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/wathon/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a96d2fcfbd0492541cb0d889e1f8eee9/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/5e336a5051a7a5640251648e00ec572c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/776c6e7350a0694e39467e68c1e53d72/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.smarteist:autoimageslider:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/autoimageslider-1.1.1.aar/a18a30e23e6ae6b76268c1f67126d335/AndroidManifest.xml:2:1-17:12
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/wathon/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/8e8ecf60edb057776a17375bc3f65019/AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.exoplayer:exoplayer:2.9.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/exoplayer-2.9.0.aar/8000f1c1167e2e21dfc7f86e482cfe0d/AndroidManifest.xml:17:1-24:12
@@ -46,7 +48,7 @@ MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/wathon/.gradle/caches/tran
 MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6ad8473b8643cd1ad01143783f9bcfaa/AndroidManifest.xml:17:1-22:12
 MERGED from [com.evernote:android-job:1.2.6] /Users/wathon/.gradle/caches/transforms-1/files-1.1/android-job-1.2.6.aar/106631fa68c159cd0f5ed3e951bebd55/AndroidManifest.xml:2:1-65:12
 MERGED from [com.android.support:transition:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/cb168517ec9dd8aebb59a50656a550a0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.android:facebook-core:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/9728e17520818f9c566e0fe46efd3269/AndroidManifest.xml:21:1-53:12
+MERGED from [com.facebook.android:facebook-core:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.39.0.aar/4f066ded6f22d2f3294baedd9679e2e9/AndroidManifest.xml:21:1-53:12
 MERGED from [com.android.support:exifinterface:27.1.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.0.aar/bedd740e1a54ceab646922a02e2c4088/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.exoplayer:exoplayer-dash:2.9.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/exoplayer-dash-2.9.0.aar/60db506ec62c6bfc4aaa6a552cf64b86/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-hls:2.9.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/exoplayer-hls-2.9.0.aar/62c76c94b9cbff7268ad7e963f0164f3/AndroidManifest.xml:17:1-24:12
@@ -55,11 +57,9 @@ MERGED from [com.google.android.exoplayer:exoplayer-ui:2.9.0] /Users/wathon/.gra
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/exoplayer-core-2.9.0.aar/d592b2db859bf78e7f0e963abbc20fcc/AndroidManifest.xml:17:1-26:12
 MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/49a1e2e1558a97f3fbc8be5b54aa7953/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.persistence:db:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/b59d6299314e5e7abd2086ab61892219/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/5e336a5051a7a5640251648e00ec572c/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/1b4f91fdc25279a7cbf433584fcee3bd/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cursoradapter:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/586cb8a09779d82573a14ba04a7f59fa/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:customtabs:27.0.2] /Users/wathon/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/44223a55480c328b509b0a4cc9e9db08/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/776c6e7350a0694e39467e68c1e53d72/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b3a57fa24d7a1290c1986af486d1efa6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:loader:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c18cdda3068a2cd3e02b3e679939860d/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/c62bd0fa97bed3ae766729c827db9d3e/AndroidManifest.xml:17:1-22:12
@@ -82,20 +82,20 @@ MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/wathon/.gr
 MERGED from [com.android.support:print:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/73970279db78b6117d05ab4ce6ff7024/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/6e130afa794719bf95d8d7a033f9849a/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.2] /Users/wathon/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.2.aar/72030eb074e4e3a9d41c00ea679aa382/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-85:12
-INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-85:12
-INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-85:12
+INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-91:12
+INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-91:12
+INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-91:12
 	package
 		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:3:5-30
 		INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml
-		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-85:12
+		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-91:12
 		INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml
-		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-85:12
+		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:1-91:12
 		INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:2:11-69
@@ -174,7 +174,7 @@ MERGED from [com.evernote:android-job:1.2.6] /Users/wathon/.gradle/caches/transf
 	android:name
 		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:11:22-65
 application
-ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:13:5-83:19
+ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:13:5-89:19
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/1d96da50dce28b4642778411dc05e125/AndroidManifest.xml:11:5-20
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/1d96da50dce28b4642778411dc05e125/AndroidManifest.xml:11:5-20
 MERGED from [com.android.volley:volley:1.1.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/adf8c0033170d23134c8e11ceb2286ff/AndroidManifest.xml:9:5-20
@@ -185,12 +185,12 @@ MERGED from [com.github.Kshitij-Jain:IndicatorView:1.25] /Users/wathon/.gradle/c
 MERGED from [com.github.Kshitij-Jain:IndicatorView:1.25] /Users/wathon/.gradle/caches/transforms-1/files-1.1/IndicatorView-1.25.aar/04716ddfe3b32c27dc59606a4c90a369/AndroidManifest.xml:11:5-15:19
 MERGED from [com.android.support:design:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/e20787e7c8f40223eb534c723a4b23c1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/e20787e7c8f40223eb534c723a4b23c1/AndroidManifest.xml:22:5-20
-MERGED from [com.facebook.android:facebook-login:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.38.1.aar/bc575e9e147ec157cccee008a79c51b6/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.38.1.aar/bc575e9e147ec157cccee008a79c51b6/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-share-4.38.1.aar/6d1470584c324d5fe73debbb262176c4/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-share-4.38.1.aar/6d1470584c324d5fe73debbb262176c4/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-common:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/968cbacf73dc9035b86b27f8add925f6/AndroidManifest.xml:28:5-35:19
-MERGED from [com.facebook.android:facebook-common:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/968cbacf73dc9035b86b27f8add925f6/AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-login:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.39.0.aar/0d4b99895e8f7e9e61ea8f87c0249597/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.39.0.aar/0d4b99895e8f7e9e61ea8f87c0249597/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-share-4.39.0.aar/853e6fa0aa4e769cbc25fd9845f22500/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-share-4.39.0.aar/853e6fa0aa4e769cbc25fd9845f22500/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.39.0.aar/b758fa3d8362c2393ef605ecb812b89e/AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-common:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.39.0.aar/b758fa3d8362c2393ef605ecb812b89e/AndroidManifest.xml:28:5-35:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/wathon/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a96d2fcfbd0492541cb0d889e1f8eee9/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/wathon/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a96d2fcfbd0492541cb0d889e1f8eee9/AndroidManifest.xml:9:5-20
 MERGED from [com.github.smarteist:autoimageslider:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/autoimageslider-1.1.1.aar/a18a30e23e6ae6b76268c1f67126d335/AndroidManifest.xml:11:5-15:19
@@ -237,8 +237,8 @@ MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/wathon/.gradle/caches/tran
 MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/e8c52a95a3f951a4597c7c0a574d1e40/AndroidManifest.xml:11:5-20
 MERGED from [com.evernote:android-job:1.2.6] /Users/wathon/.gradle/caches/transforms-1/files-1.1/android-job-1.2.6.aar/106631fa68c159cd0f5ed3e951bebd55/AndroidManifest.xml:16:5-63:19
 MERGED from [com.evernote:android-job:1.2.6] /Users/wathon/.gradle/caches/transforms-1/files-1.1/android-job-1.2.6.aar/106631fa68c159cd0f5ed3e951bebd55/AndroidManifest.xml:16:5-63:19
-MERGED from [com.facebook.android:facebook-core:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/9728e17520818f9c566e0fe46efd3269/AndroidManifest.xml:28:5-51:19
-MERGED from [com.facebook.android:facebook-core:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/9728e17520818f9c566e0fe46efd3269/AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.android:facebook-core:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.39.0.aar/4f066ded6f22d2f3294baedd9679e2e9/AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.android:facebook-core:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.39.0.aar/4f066ded6f22d2f3294baedd9679e2e9/AndroidManifest.xml:28:5-51:19
 MERGED from [com.android.support:support-compat:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a8b13f259ad9689419b3c2d480dcb939/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a8b13f259ad9689419b3c2d480dcb939/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/3749751336a19c3ffcc4f2b8734f290c/AndroidManifest.xml:22:5-23:19
@@ -258,7 +258,7 @@ MERGED from [com.google.android.gms:play-services-measurement-base:16.0.2] /User
 	tools:targetApi
 		ADDED from [com.novoda:download-manager:2.2.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/download-manager-2.2.0.aar/d2c11e2b94abde8e9866d4c05fad8873/AndroidManifest.xml:21:9-28
 	android:icon
-		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:14:9-45
+		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:15:9-45
 	android:networkSecurityConfig
 		ADDED from [com.novoda:download-manager:2.2.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/download-manager-2.2.0.aar/d2c11e2b94abde8e9866d4c05fad8873/AndroidManifest.xml:20:9-69
 	android:theme
@@ -266,7 +266,7 @@ MERGED from [com.google.android.gms:play-services-measurement-base:16.0.2] /User
 	android:usesCleartextTraffic
 		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:18:9-44
 	android:name
-		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:14:9-35
 meta-data#com.google.firebase.messaging.default_notification_icon
 ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:19:9-21:56
 	android:resource
@@ -323,56 +323,62 @@ ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main
 		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:54:13-58
 activity#com.facebook.FacebookActivity
 ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:57:9-60:48
-MERGED from [com.facebook.android:facebook-common:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/968cbacf73dc9035b86b27f8add925f6/AndroidManifest.xml:29:9-32:66
-MERGED from [com.facebook.android:facebook-common:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/968cbacf73dc9035b86b27f8add925f6/AndroidManifest.xml:29:9-32:66
+MERGED from [com.facebook.android:facebook-common:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.39.0.aar/b758fa3d8362c2393ef605ecb812b89e/AndroidManifest.xml:29:9-32:66
+MERGED from [com.facebook.android:facebook-common:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.39.0.aar/b758fa3d8362c2393ef605ecb812b89e/AndroidManifest.xml:29:9-32:66
 	android:label
 		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:60:13-45
 	android:configChanges
 		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:59:13-96
 	android:theme
-		ADDED from [com.facebook.android:facebook-common:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/968cbacf73dc9035b86b27f8add925f6/AndroidManifest.xml:32:13-63
+		ADDED from [com.facebook.android:facebook-common:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.39.0.aar/b758fa3d8362c2393ef605ecb812b89e/AndroidManifest.xml:32:13-63
 	android:name
 		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:58:13-57
 activity#com.moc.byscote.LoginActivity
-ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:61:9-69:20
+ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:61:9-65:20
 	android:configChanges
 		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:63:13-122
 	android:name
 		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:62:13-42
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:64:13-68:29
-action#android.intent.action.MAIN
-ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:65:17-69
-	android:name
-		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:65:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:67:17-77
-	android:name
-		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:67:27-74
 provider#com.facebook.FacebookContentProvider
-ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:72:9-75:39
+ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:68:9-71:39
 	android:authorities
-		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:74:13-92
+		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:70:13-92
 	android:exported
-		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:75:13-36
+		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:71:13-36
 	android:name
-		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:73:13-64
+		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:69:13-64
 activity#com.moc.byscote.MainActivity
-ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:77:9-80:59
+ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:73:9-76:59
 	android:label
-		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:79:13-56
+		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:75:13-56
 	android:theme
-		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:80:13-56
+		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:76:13-56
 	android:name
-		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:78:13-41
+		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:74:13-41
 activity#com.moc.byscote.NotificationActivity
-ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:81:9-58
+ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:77:9-58
 	android:name
-		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:81:19-55
+		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:77:19-55
 activity#com.moc.byscote.PlayerActivity
-ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:82:9-61
+ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:78:9-52
 	android:name
-		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:82:19-49
+		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:78:19-49
+activity#com.moc.byscote.ByscoteMainActivity
+ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:79:9-88:20
+	android:label
+		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:81:13-64
+	android:name
+		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:80:13-48
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:82:13-86:29
+action#android.intent.action.MAIN
+ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:83:17-69
+	android:name
+		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:83:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:85:17-77
+	android:name
+		ADDED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml:85:27-74
 uses-sdk
 INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/wathon/Development/android-development/ByscoteApp/app/src/main/AndroidManifest.xml
@@ -391,12 +397,12 @@ MERGED from [com.github.Kshitij-Jain:IndicatorView:1.25] /Users/wathon/.gradle/c
 MERGED from [com.github.Kshitij-Jain:IndicatorView:1.25] /Users/wathon/.gradle/caches/transforms-1/files-1.1/IndicatorView-1.25.aar/04716ddfe3b32c27dc59606a4c90a369/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:design:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/e20787e7c8f40223eb534c723a4b23c1/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/e20787e7c8f40223eb534c723a4b23c1/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.android:facebook-login:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.38.1.aar/bc575e9e147ec157cccee008a79c51b6/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.38.1.aar/bc575e9e147ec157cccee008a79c51b6/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-share-4.38.1.aar/6d1470584c324d5fe73debbb262176c4/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-share-4.38.1.aar/6d1470584c324d5fe73debbb262176c4/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/968cbacf73dc9035b86b27f8add925f6/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/968cbacf73dc9035b86b27f8add925f6/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.39.0.aar/0d4b99895e8f7e9e61ea8f87c0249597/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.39.0.aar/0d4b99895e8f7e9e61ea8f87c0249597/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-share-4.39.0.aar/853e6fa0aa4e769cbc25fd9845f22500/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-share-4.39.0.aar/853e6fa0aa4e769cbc25fd9845f22500/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.39.0.aar/b758fa3d8362c2393ef605ecb812b89e/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.39.0.aar/b758fa3d8362c2393ef605ecb812b89e/AndroidManifest.xml:24:5-26:41
 MERGED from [com.android.support:cardview-v7:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/baf2d32ffd41c5edac16a2bc86feba26/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/baf2d32ffd41c5edac16a2bc86feba26/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/186e7abf12875d12bc984dd578db5d7c/AndroidManifest.xml:20:5-44
@@ -407,6 +413,10 @@ MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/wathon/.gradle/cach
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ef4b2d7f410ed1026b7121edcfdf343d/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/wathon/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a96d2fcfbd0492541cb0d889e1f8eee9/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/wathon/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a96d2fcfbd0492541cb0d889e1f8eee9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/5e336a5051a7a5640251648e00ec572c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/5e336a5051a7a5640251648e00ec572c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/776c6e7350a0694e39467e68c1e53d72/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/776c6e7350a0694e39467e68c1e53d72/AndroidManifest.xml:20:5-44
 MERGED from [com.github.smarteist:autoimageslider:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/autoimageslider-1.1.1.aar/a18a30e23e6ae6b76268c1f67126d335/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.smarteist:autoimageslider:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/autoimageslider-1.1.1.aar/a18a30e23e6ae6b76268c1f67126d335/AndroidManifest.xml:7:5-9:41
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/wathon/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/8e8ecf60edb057776a17375bc3f65019/AndroidManifest.xml:5:5-44
@@ -461,8 +471,8 @@ MERGED from [com.evernote:android-job:1.2.6] /Users/wathon/.gradle/caches/transf
 MERGED from [com.evernote:android-job:1.2.6] /Users/wathon/.gradle/caches/transforms-1/files-1.1/android-job-1.2.6.aar/106631fa68c159cd0f5ed3e951bebd55/AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:transition:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/cb168517ec9dd8aebb59a50656a550a0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/cb168517ec9dd8aebb59a50656a550a0/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.android:facebook-core:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/9728e17520818f9c566e0fe46efd3269/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/9728e17520818f9c566e0fe46efd3269/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.39.0.aar/4f066ded6f22d2f3294baedd9679e2e9/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.39.0.aar/4f066ded6f22d2f3294baedd9679e2e9/AndroidManifest.xml:24:5-26:41
 MERGED from [com.android.support:exifinterface:27.1.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.0.aar/bedd740e1a54ceab646922a02e2c4088/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:exifinterface:27.1.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.0.aar/bedd740e1a54ceab646922a02e2c4088/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.exoplayer:exoplayer-dash:2.9.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/exoplayer-dash-2.9.0.aar/60db506ec62c6bfc4aaa6a552cf64b86/AndroidManifest.xml:20:5-22:41
@@ -479,16 +489,12 @@ MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/wathon/.gradle/
 MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/49a1e2e1558a97f3fbc8be5b54aa7953/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.persistence:db:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/b59d6299314e5e7abd2086ab61892219/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.persistence:db:1.1.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/b59d6299314e5e7abd2086ab61892219/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/5e336a5051a7a5640251648e00ec572c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/5e336a5051a7a5640251648e00ec572c/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/1b4f91fdc25279a7cbf433584fcee3bd/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/1b4f91fdc25279a7cbf433584fcee3bd/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cursoradapter:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/586cb8a09779d82573a14ba04a7f59fa/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cursoradapter:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/586cb8a09779d82573a14ba04a7f59fa/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:customtabs:27.0.2] /Users/wathon/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/44223a55480c328b509b0a4cc9e9db08/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:customtabs:27.0.2] /Users/wathon/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/44223a55480c328b509b0a4cc9e9db08/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/776c6e7350a0694e39467e68c1e53d72/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/776c6e7350a0694e39467e68c1e53d72/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b3a57fa24d7a1290c1986af486d1efa6/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b3a57fa24d7a1290c1986af486d1efa6/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:loader:28.0.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c18cdda3068a2cd3e02b3e679939860d/AndroidManifest.xml:20:5-44
@@ -552,13 +558,13 @@ ADDED from [com.novoda:download-manager:2.2.0] /Users/wathon/.gradle/caches/tran
 	android:name
 		ADDED from [com.novoda:download-manager:2.2.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/download-manager-2.2.0.aar/d2c11e2b94abde8e9866d4c05fad8873/AndroidManifest.xml:22:18-79
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-common:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/968cbacf73dc9035b86b27f8add925f6/AndroidManifest.xml:33:9-71
+ADDED from [com.facebook.android:facebook-common:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.39.0.aar/b758fa3d8362c2393ef605ecb812b89e/AndroidManifest.xml:33:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-common:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/968cbacf73dc9035b86b27f8add925f6/AndroidManifest.xml:33:19-68
+		ADDED from [com.facebook.android:facebook-common:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.39.0.aar/b758fa3d8362c2393ef605ecb812b89e/AndroidManifest.xml:33:19-68
 activity#com.facebook.CustomTabActivity
-ADDED from [com.facebook.android:facebook-common:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/968cbacf73dc9035b86b27f8add925f6/AndroidManifest.xml:34:9-67
+ADDED from [com.facebook.android:facebook-common:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.39.0.aar/b758fa3d8362c2393ef605ecb812b89e/AndroidManifest.xml:34:9-67
 	android:name
-		ADDED from [com.facebook.android:facebook-common:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/968cbacf73dc9035b86b27f8add925f6/AndroidManifest.xml:34:19-64
+		ADDED from [com.facebook.android:facebook-common:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.39.0.aar/b758fa3d8362c2393ef605ecb812b89e/AndroidManifest.xml:34:19-64
 provider#com.squareup.picasso.PicassoProvider
 ADDED from [com.squareup.picasso:picasso:2.71828] /Users/wathon/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/8e8ecf60edb057776a17375bc3f65019/AndroidManifest.xml:8:9-11:40
 	android:authorities
@@ -792,22 +798,22 @@ ADDED from [com.evernote:android-job:1.2.6] /Users/wathon/.gradle/caches/transfo
 	android:name
 		ADDED from [com.evernote:android-job:1.2.6] /Users/wathon/.gradle/caches/transforms-1/files-1.1/android-job-1.2.6.aar/106631fa68c159cd0f5ed3e951bebd55/AndroidManifest.xml:60:13-73
 provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/9728e17520818f9c566e0fe46efd3269/AndroidManifest.xml:39:9-42:40
+ADDED from [com.facebook.android:facebook-core:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.39.0.aar/4f066ded6f22d2f3294baedd9679e2e9/AndroidManifest.xml:39:9-42:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/9728e17520818f9c566e0fe46efd3269/AndroidManifest.xml:41:13-72
+		ADDED from [com.facebook.android:facebook-core:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.39.0.aar/4f066ded6f22d2f3294baedd9679e2e9/AndroidManifest.xml:41:13-72
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/9728e17520818f9c566e0fe46efd3269/AndroidManifest.xml:42:13-37
+		ADDED from [com.facebook.android:facebook-core:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.39.0.aar/4f066ded6f22d2f3294baedd9679e2e9/AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/9728e17520818f9c566e0fe46efd3269/AndroidManifest.xml:40:13-70
+		ADDED from [com.facebook.android:facebook-core:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.39.0.aar/4f066ded6f22d2f3294baedd9679e2e9/AndroidManifest.xml:40:13-70
 receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
-ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/9728e17520818f9c566e0fe46efd3269/AndroidManifest.xml:44:9-50:20
+ADDED from [com.facebook.android:facebook-core:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.39.0.aar/4f066ded6f22d2f3294baedd9679e2e9/AndroidManifest.xml:44:9-50:20
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/9728e17520818f9c566e0fe46efd3269/AndroidManifest.xml:46:13-37
+		ADDED from [com.facebook.android:facebook-core:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.39.0.aar/4f066ded6f22d2f3294baedd9679e2e9/AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/9728e17520818f9c566e0fe46efd3269/AndroidManifest.xml:45:13-86
+		ADDED from [com.facebook.android:facebook-core:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.39.0.aar/4f066ded6f22d2f3294baedd9679e2e9/AndroidManifest.xml:45:13-86
 intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/9728e17520818f9c566e0fe46efd3269/AndroidManifest.xml:47:13-49:29
+ADDED from [com.facebook.android:facebook-core:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.39.0.aar/4f066ded6f22d2f3294baedd9679e2e9/AndroidManifest.xml:47:13-49:29
 action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/9728e17520818f9c566e0fe46efd3269/AndroidManifest.xml:48:17-95
+ADDED from [com.facebook.android:facebook-core:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.39.0.aar/4f066ded6f22d2f3294baedd9679e2e9/AndroidManifest.xml:48:17-95
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/9728e17520818f9c566e0fe46efd3269/AndroidManifest.xml:48:25-92
+		ADDED from [com.facebook.android:facebook-core:4.39.0] /Users/wathon/.gradle/caches/transforms-1/files-1.1/facebook-core-4.39.0.aar/4f066ded6f22d2f3294baedd9679e2e9/AndroidManifest.xml:48:25-92

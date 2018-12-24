@@ -8,7 +8,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,13 +51,22 @@
                     android:padding="4dp"
                     android:src="@drawable/big_logo_text" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#ffffff"
+                    android:layout_toLeftOf="@+id/img_left_menu"/>
+
                 <ImageView
                     android:id="@+id/img_left_menu"
-                    android:layout_width="65dp"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:layout_alignParentRight="true"
-                    android:layout_marginTop="8dp"
-                    android:src="@drawable/ic_menu_black" />
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/ic_arrow_drop_down" />
 
             </RelativeLayout>
 
@@ -65,6 +75,7 @@
                 android:id="@+id/picker"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="4dp"
                 android:background="#7a55eb"
                 android:scrollIndicators="start"
                 app:dsv_orientation="horizontal" />
@@ -99,8 +110,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:layout_marginTop="6dp"
-                android:layout_marginBottom="2dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="4dp"
                 android:orientation="horizontal"
                 android:paddingLeft="4dp">
 
@@ -109,7 +120,8 @@
                     android:layout_height="wrap_content"
                     android:text="Continue Watching"
                     android:textColor="#ffffff"
-                    android:textSize="16dp" />
+                    android:textStyle="bold"
+                    android:textSize="17dp" />
 
                 <ImageView
                     android:id="@+id/v1"
@@ -129,20 +141,12 @@
 
             </android.support.v7.widget.RecyclerView>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:background="#595757"
-                android:paddingBottom="6dp" />
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:layout_marginTop="6dp"
-                android:layout_marginBottom="2dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
                 android:orientation="horizontal"
                 android:paddingLeft="4dp">
 
@@ -151,7 +155,8 @@
                     android:layout_height="wrap_content"
                     android:text="Recently Added"
                     android:textColor="#ffffff"
-                    android:textSize="16dp" />
+                    android:textStyle="bold"
+                    android:textSize="17dp" />
 
                 <ImageView
                     android:id="@+id/v2"
@@ -171,29 +176,22 @@
 
             </android.support.v7.widget.RecyclerView>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:background="#595757"
-                android:paddingBottom="4dp" />
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:layout_marginTop="6dp"
-                android:layout_marginBottom="2dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
                 android:orientation="horizontal"
                 android:paddingLeft="4dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Action / Adventure"
+                    android:text="Fantasy"
                     android:textColor="#ffffff"
-                    android:textSize="16dp" />
+                    android:textStyle="bold"
+                    android:textSize="17dp" />
 
                 <ImageView
                     android:id="@+id/v3"
@@ -213,29 +211,22 @@
 
             </android.support.v7.widget.RecyclerView>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:background="#595757"
-                android:paddingBottom="4dp" />
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:layout_marginTop="6dp"
-                android:layout_marginBottom="2dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
                 android:orientation="horizontal"
                 android:paddingLeft="4dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Comedy"
+                    android:text="Action"
                     android:textColor="#ffffff"
-                    android:textSize="16dp" />
+                    android:textStyle="bold"
+                    android:textSize="17dp" />
 
                 <ImageView
                     android:id="@+id/v4"
@@ -255,42 +246,19 @@
 
             </android.support.v7.widget.RecyclerView>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:background="#595757"
-                android:paddingBottom="4dp" />
-
-            <RelativeLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="6dp"
-                android:layout_marginBottom="2dp"
-                android:orientation="horizontal"
-                android:paddingLeft="4dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Drama"
-                    android:textColor="#ffffff"
-                    android:textSize="16dp" />
-
-                <ImageView
-                    android:id="@+id/v5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="26dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="16dp"
-                    android:gravity="right"
-                    android:src="@mipmap/ic_view_all" />
-            </RelativeLayout>
+                android:text="Categories"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
 
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/recycler_view5"
+                android:id="@+id/recycler_category"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="2dp">
