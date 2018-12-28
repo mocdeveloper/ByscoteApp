@@ -72,15 +72,15 @@ public class SeasonsListFragment extends Fragment {
     View view;
     RecyclerView recyclerview;
     EpisodesListAdapter recycler_adapter;
+    SeriesListAdapter recycler_adapter2;
+    public static ArrayList<SeriesList> Series_List;
     public static ArrayList<EpisodesList> Episodes_List;
     Fragment fragment;
-    TextView txt_description;
     ImageView img_series;
-    String description_bu;
+    String description_bu,series_list_url;
     String img_path,img_src;
     String seasons_list_url, series_id , season_id,episodes_list_url;
     String cookies_url,dirPath;
-    Button btn_download;
     String mockey,signature,policy,key_pair_id;
     Batch batch;
     DownloadManager downloadManager;
@@ -108,10 +108,12 @@ public class SeasonsListFragment extends Fragment {
         img_src = getArguments().getString("img_series");
         seasons_list_url = getResources().getString(R.string.base_url)+"movie_category/seasons/"+series_id;
 
+        series_list_url = getResources().getString(R.string.base_url)+"movie_category/series/"+"C596529ca3c1b21.69573066";
+
+        Series_List = new ArrayList<SeriesList>();
 
         recyclerview = view.findViewById(R.id.recycler_view);
         recyclerview.setNestedScrollingEnabled(false);
-        btn_download = view.findViewById(R.id.btn_download);
 
         Handler handler = new Handler();
         downloadManager = DownloadManagerBuilder
@@ -130,34 +132,43 @@ public class SeasonsListFragment extends Fragment {
                 .build();
 
 
-
-        btn_download.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                String cookieValue = "mockey="+mockey+";CloudFront-Policy="+policy+
-                        ";CloudFront-Signature="+signature+
-                        ";CloudFront-Key-Pair-Id="+key_pair_id;
-
-
-                downloadManager.download(batch);
-
-            }
-        });
-
         img_series = view.findViewById(R.id.img_series);
-        txt_description = view.findViewById(R.id.txt_description);
 
         Episodes_List = new ArrayList<EpisodesList>();
 
+        callSeriesList();
+
         callSeasonsList();
+
+        img_series.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                callForCookies();
+
+            }
+        });
 
         recyclerview.addOnItemTouchListener(new HomeFragment.RecyclerTouchListener(getActivity(), recyclerview, new HomeFragment.ClickListener() {
             @Override
             public void onClick(View view, int position) {
 
 
-                callForCookies();
+                fragment = new SeasonsListFragment();
+
+                if (fragment != null) {
+                    FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+
+                    Bundle args = new Bundle();
+                    args.putString("series_id", Series_List.get(position).getSeries_id());
+                    args.putString("img_series", Series_List.get(position).getImg_src());
+
+                    fragment.setArguments(args);
+                    ft.replace(R.id.mainFrame, fragment).addToBackStack("Seasons");
+                    ft.commit();
+
+                }
+
 
 
             }
@@ -461,13 +472,13 @@ public class SeasonsListFragment extends Fragment {
 
 
                             Picasso.get().load(img_src).into(img_series);
-                            txt_description.setText(description_bu);
-                            recycler_adapter = new EpisodesListAdapter(getActivity(),Episodes_List);
-                            GridLayoutManager mGridLayoutManager = new GridLayoutManager(getActivity(), 2);
-                            recyclerview.setLayoutManager(mGridLayoutManager);
-                           // recyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
-                            recycler_adapter.notifyDataSetChanged();
-                            recyclerview.setAdapter(recycler_adapter);
+//                          //  txt_description.setText(description_bu);
+//                            recycler_adapter = new EpisodesListAdapter(getActivity(),Episodes_List);
+//                            GridLayoutManager mGridLayoutManager = new GridLayoutManager(getActivity(), 2);
+//                            recyclerview.setLayoutManager(mGridLayoutManager);
+//                           // recyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
+//                            recycler_adapter.notifyDataSetChanged();
+//                            recyclerview.setAdapter(recycler_adapter);
 
                             Log.i("Response", response);
 
@@ -536,6 +547,111 @@ public class SeasonsListFragment extends Fragment {
         }
 
     }
+
+    public void callSeriesList() {
+
+
+        RequestQueue queue = Volley.newRequestQueue(getActivity());
+
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, series_list_url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+
+                        JSONArray jsonArray = null;
+
+                        try {
+
+                            jsonArray = new JSONArray(response);
+
+                            for(int i=0;i< jsonArray.length();i++){
+
+                                JSONObject jsonObject1 = jsonArray.getJSONObject(i);
+                                String name = jsonObject1.getString("name_bu");
+                                String img_path = "http://assets.byscote.myanmaronlinecreations.com/movie/series/" + jsonObject1.getString("slide_image");
+                                String series_id = jsonObject1.getString("series_id");
+                                Log.i("Name : ", name);
+                                Log.i("Image Path : ", img_path);
+
+                                SeriesList item = new SeriesList(img_path,name,series_id);
+                                Series_List.add(item);
+
+                            }
+
+                            recycler_adapter2 = new SeriesListAdapter(getActivity(),Series_List);
+                            //  recyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
+                            recyclerview.setLayoutManager(new GridLayoutManager(getActivity(), 3));
+                            recycler_adapter2.notifyDataSetChanged();
+                            recyclerview.setAdapter(recycler_adapter2);
+
+                            Log.i("Response", response);
+
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                },
+
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                        //Log.e("That didn't work!", error.toString());
+
+                        NetworkResponse networkResponse = error.networkResponse;
+
+                        if (networkResponse != null && networkResponse.statusCode == HttpStatus.SC_UNAUTHORIZED) {
+                            // HTTP Status Code: 401 Unauthorized
+
+                            //   Toast.makeText(getActivity(), "Wrong Token", Toast.LENGTH_LONG).show();
+
+
+                        } else if (networkResponse != null && networkResponse.statusCode == HttpStatus.SC_INTERNAL_SERVER_ERROR) {
+                            // HTTP Status Code: 500 Internal Server Error
+
+                            //Toast.makeText(getApplicationContext(), error.toString(), Toast.LENGTH_LONG).show();
+
+
+                        } else if (networkResponse != null && networkResponse.statusCode == HttpStatus.SC_NOT_FOUND) {
+                            // HTTP Status Code: 404 Not Found
+
+                            //Toast.makeText(getApplicationContext(), error.toString(), Toast.LENGTH_LONG).show();
+
+
+                        } else if ((networkResponse != null && networkResponse.statusCode == HttpStatus.SC_REQUEST_TIMEOUT)
+                                || (networkResponse != null && networkResponse.statusCode == HttpStatus.SC_GATEWAY_TIMEOUT)
+                                || (networkResponse != null && networkResponse.statusCode == HttpStatus.SC_SERVICE_UNAVAILABLE)
+                                || (networkResponse != null && networkResponse.statusCode == HttpStatus.SC_BAD_REQUEST)
+                                || (networkResponse != null && networkResponse.statusCode == HttpStatus.SC_FORBIDDEN)
+                                || (networkResponse != null && networkResponse.statusCode == HttpStatus.SC_BAD_GATEWAY)) {
+
+
+                        } else {
+
+
+                        }
+                    }
+                }) {
+
+
+        };
+
+        try {
+
+            queue.add(stringRequest);
+
+            stringRequest.setRetryPolicy(new DefaultRetryPolicy(
+                    0,
+                    DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                    DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
 
 
     public interface OnFragmentInteractionListener {

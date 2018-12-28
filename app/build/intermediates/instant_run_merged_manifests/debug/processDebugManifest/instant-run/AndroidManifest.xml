@@ -78,8 +78,7 @@
             android:theme="@style/com_facebook_activity_theme" />
         <activity
             android:name="com.moc.byscote.LoginActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" >
-        </activity>
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
 
         <!-- [Start fbshare] -->
         <provider
@@ -96,6 +95,8 @@
         <activity
             android:name="com.moc.byscote.ByscoteMainActivity"
             android:label="@string/title_activity_byscote_main" >
+        </activity>
+        <activity android:name="com.moc.byscote.WelcomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -19,7 +19,6 @@ import static com.moc.byscote.MainActivity.drawer;
 public class PaymentSelectFragment extends Fragment {
 
     View view,dialog_view;
-    ImageView img_left_menu;
     Button button;
     Fragment fragment;
     CardView card_shop,card_mpu,card_online;
@@ -90,20 +89,6 @@ public class PaymentSelectFragment extends Fragment {
 
             }
         });
-
-        img_left_menu = view.findViewById(R.id.img_left_menu);
-        img_left_menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                if (drawer.isDrawerOpen(GravityCompat.START)) {
-                    drawer.closeDrawer(GravityCompat.START);
-                } else {
-                    drawer.openDrawer(GravityCompat.START);
-                }
-            }
-        });
-
 
         return view;
 

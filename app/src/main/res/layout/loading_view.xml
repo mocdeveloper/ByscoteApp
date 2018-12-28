@@ -1,8 +1,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#000000">
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#000000">
 
 	<ImageView
 		android:id="@+id/splashArea"
@@ -11,7 +11,15 @@
 		android:scaleType="centerCrop"
 		android:adjustViewBounds="false"
 		android:cropToPadding="true"
-		android:src="@drawable/loading_page" />
+		android:src="@mipmap/homebg" />
+
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="42dp"
+		android:paddingBottom="78dp"
+		android:layout_gravity="center"
+		android:src="@drawable/big_logo_text"/>
 
 	<ImageView
 		android:id="@+id/img_loading"
@@ -25,5 +33,5 @@
 		android:src="@drawable/loading_anim" />
 
 
- 
+
 </FrameLayout>

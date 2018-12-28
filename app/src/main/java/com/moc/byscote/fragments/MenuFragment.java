@@ -2,6 +2,7 @@ package com.moc.byscote.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ public class MenuFragment extends Fragment {
 
     View view;
     RelativeLayout rl_account,rl_payment,rl_promo,rl_noti;
+    Fragment fragment = null;
 
     public MenuFragment() {
         // Required empty public constructor
@@ -35,14 +37,32 @@ public class MenuFragment extends Fragment {
         rl_account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
 
+                fragment = new MenuAccountFragment();
+
+                if (fragment != null) {
+                    FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+
+                    ft.replace(R.id.mainFrame, fragment).addToBackStack("Account");
+                    ft.commit();
+
+                }
             }
         });
 
         rl_payment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                fragment = new MenuPaymentFragment();
+
+                if (fragment != null) {
+                    FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+
+                    ft.replace(R.id.mainFrame, fragment).addToBackStack("Account");
+                    ft.commit();
+
+                }
 
             }
         });
@@ -52,6 +72,16 @@ public class MenuFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
+                fragment = new MenuPromoFragment();
+
+                if (fragment != null) {
+                    FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+
+                    ft.replace(R.id.mainFrame, fragment).addToBackStack("Account");
+                    ft.commit();
+
+                }
+
             }
         });
 
@@ -59,6 +89,16 @@ public class MenuFragment extends Fragment {
         rl_noti.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                fragment = new MenuNotiFragment();
+
+                if (fragment != null) {
+                    FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+
+                    ft.replace(R.id.mainFrame, fragment).addToBackStack("Account");
+                    ft.commit();
+
+                }
 
             }
         });

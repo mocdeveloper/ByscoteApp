@@ -59,6 +59,7 @@ public class PlayerActivity extends AppCompatActivity {
 
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_USER);
 
         BANDWIDTH_METER = new DefaultBandwidthMeter();
         playerView = findViewById(R.id.video_view);

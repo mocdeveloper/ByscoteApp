@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="ကြၽန္ုပ္ အေကာင့္"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="#737070"
+                android:padding="4dp"
+                android:hint="သုံးသူ အမည္">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textColor="#ffffff"
+                    android:text="Developer MOC"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="#737070"
+                android:padding="4dp"
+                android:hint="အေကာင့္">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textColor="#ffffff"
+                    android:text="12048373788"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColorHint="#737070"
+                android:layout_marginTop="8dp"
+                android:padding="4dp"
+                android:hint="အေကာင့္ စဖြင့္ေသာရက္">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textColor="#ffffff"
+                    android:text="07-Nov-2018"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:text="ဆက္သြယ္ရန္အခ်က္မ်ား"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="အခ်က္အလက္တခ်ိဳ ႔ ကိုထည့္သြင္းျခင္းျဖင့္ အသစ္အသစ္ေသာ ကမ္းလွမ္းခ်က္မ်ားနွင့္ ပရိုမိုးရွင္းမ်ားအားလုံးကို အခ်ိန္နွင့္ တေျပးညီ ရနိုင္ပါမည္ "
+                android:textColor="#ffffff"
+                android:textSize="11dp" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:textColorHint="#737070"
+                android:padding="4dp"
+                android:hint="ဖုန္းနံပါတ္">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:drawableRight="@mipmap/ic_edit_primary"
+                    android:textColor="#ffffff"
+                    android:text="xxxxxxxxxxx"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="#737070"
+                android:padding="4dp"
+                android:hint="အီးေမးလ္">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@mipmap/ic_edit_primary"
+                    android:textSize="15dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textColor="#ffffff"
+                    android:text="developmoctest@gmail.com"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_press3"
+                android:textColor="#ffffff"
+                android:text="SAVE"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

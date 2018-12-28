@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.GravityCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -17,9 +16,8 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.view.Window;
-import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -74,6 +72,7 @@ public class HomeFragment extends Fragment {
 
     PagerAdapter pagerAdapter;
     ImageView v1, v2, v3, v4;
+    TextView t1,t2,t3,t4,t5;
 
     public static ArrayList<CategoryList> Categories_List;
     public static ArrayList<SeriesList> Series_List;
@@ -82,7 +81,8 @@ public class HomeFragment extends Fragment {
     ImageView img_left_menu;
     IndicatorView mIndicatorView;
     AlertDialog alertDialog;
-    LayoutInflater inflate;
+    LayoutInflater inflate,inflate2;
+    Dialog dialog2;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -92,6 +92,13 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+//        dialog2 = new Dialog(getActivity(), android.R.style.Theme_Light);
+//        dialog2.requestWindowFeature(Window.FEATURE_NO_TITLE);
+//
+//        inflate2 = getActivity().getLayoutInflater();
+//        dialog_view = inflate2.inflate(R.layout.loading_dialog, null);
+//        dialog2.setContentView(dialog_view);
+//        dialog2.show();
 
         view = inflater.inflate(R.layout.fragment_home, null);
 
@@ -118,15 +125,34 @@ public class HomeFragment extends Fragment {
         recyclerview4 = view.findViewById(R.id.recycler_view4);
         recyclerCategory = view.findViewById(R.id.recycler_category);
 
+        recyclerCategory.setNestedScrollingEnabled(false);
+
+
         v1 = view.findViewById(R.id.v1);
         v2 = view.findViewById(R.id.v2);
         v3 = view.findViewById(R.id.v3);
         v4 = view.findViewById(R.id.v4);
 
+        t1 = view.findViewById(R.id.t1);
+        t2 = view.findViewById(R.id.t2);
+        t3 = view.findViewById(R.id.t3);
+        t4 = view.findViewById(R.id.t4);
+        t5 = view.findViewById(R.id.t5);
+
+        v1.setVisibility(View.INVISIBLE);
+        v2.setVisibility(View.INVISIBLE);
+        v3.setVisibility(View.INVISIBLE);
+        v4.setVisibility(View.INVISIBLE);
+        t1.setVisibility(View.INVISIBLE);
+        t2.setVisibility(View.INVISIBLE);
+        t3.setVisibility(View.INVISIBLE);
+        t4.setVisibility(View.INVISIBLE);
+        t5.setVisibility(View.INVISIBLE);
+
+
 
         Categories_List = new ArrayList<CategoryList>();
         Series_List = new ArrayList<SeriesList>();
-
 
         callCategoryList();
 //        inflate = getActivity().getLayoutInflater();
@@ -753,7 +779,6 @@ public class HomeFragment extends Fragment {
 
     public void callSeriesList() {
 
-
         RequestQueue queue = Volley.newRequestQueue(getActivity());
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, series_list_url,
@@ -788,10 +813,32 @@ public class HomeFragment extends Fragment {
                             recyclerview.setLayoutManager(layoutManager);
                             recycler_adapter2.notifyDataSetChanged();
                             recyclerview.setAdapter(recycler_adapter2);
+                            recyclerview.getViewTreeObserver().addOnPreDrawListener(
+                                    new ViewTreeObserver.OnPreDrawListener() {
+
+                                        @Override
+                                        public boolean onPreDraw() {
+                                            recyclerview.getViewTreeObserver().removeOnPreDrawListener(this);
+
+                                            for (int i = 0; i < recyclerview.getChildCount(); i++) {
+                                                View v = recyclerview.getChildAt(i);
+                                                v.setAlpha(0.0f);
+                                                v.animate().alpha(1.0f)
+                                                        .setDuration(300)
+                                                        .setStartDelay(i * 50)
+                                                        .start();
+                                            }
+
+                                            return true;
+                                        }
+                                    });
 
                             mIndicatorView.setPageIndicators(Series_List.size());
                             pagerAdapter = new PagerAdapter(getActivity(), Series_List);
+                            pagerAdapter.notifyDataSetChanged();
                             scrollView.setAdapter(pagerAdapter);
+                            scrollView.scrollToPosition(1);
+                            mIndicatorView.setCurrentPage(1);
 
                             recycler_adapter3 = new SeriesListAdapter2(getActivity(), Series_List);
                             LinearLayoutManager layoutManager2
@@ -818,12 +865,24 @@ public class HomeFragment extends Fragment {
                             recyclerCategory.setAdapter(recycler_category_adapter);
 
 
+                            v1.setVisibility(View.VISIBLE);
+                            v2.setVisibility(View.VISIBLE);
+                            v3.setVisibility(View.VISIBLE);
+                            v4.setVisibility(View.VISIBLE);
+                            t1.setVisibility(View.VISIBLE);
+                            t2.setVisibility(View.VISIBLE);
+                            t3.setVisibility(View.VISIBLE);
+                            t4.setVisibility(View.VISIBLE);
+                            t5.setVisibility(View.VISIBLE);
+
                             Log.i("Response", response);
 
 
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
+
+                     //   dialog2.dismiss();
                     }
                 },
 

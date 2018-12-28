@@ -67,8 +67,6 @@ public class LoginActivity extends Activity {
 
     private LinearLayout facebookBtn;
     private WebView webview;
-    private TextView appDescription1;
-    private TextView appDescription2;
     private TextView txtTnc;
     String login_url;
     User user;
@@ -91,10 +89,10 @@ public class LoginActivity extends Activity {
         UUID = MOCInstallation.UUID(this);
 
         if(isConnected()) {
-            setContentView(R.layout.loading_view);
-            ImageView loadingImg = (ImageView) findViewById(R.id.img_loading);
-            AnimationDrawable rocketAnimation = (AnimationDrawable) loadingImg.getDrawable();
-            rocketAnimation.start();
+//            setContentView(R.layout.loading_view);
+//            ImageView loadingImg = (ImageView) findViewById(R.id.img_loading);
+//            AnimationDrawable rocketAnimation = (AnimationDrawable) loadingImg.getDrawable();
+//            rocketAnimation.start();
 
             FacebookSdk.sdkInitialize(getApplicationContext());
 
@@ -154,16 +152,13 @@ public class LoginActivity extends Activity {
 
     void registerUiCompos() {
         // save any ui components' references
-        facebookBtn = (LinearLayout)findViewById(R.id.login_btn_facebook);
-        appDescription1 = (TextView)findViewById(R.id.login_app_description_1);
-        appDescription2 = (TextView)findViewById(R.id.login_app_description_2);
-        txtTnc = (TextView)findViewById(R.id.login_txt_tnc);
-        webview = (WebView)findViewById(R.id.login_webview);
+        facebookBtn = findViewById(R.id.login_btn_facebook);
+        txtTnc = findViewById(R.id.login_txt_tnc);
+        webview = findViewById(R.id.login_webview);
     }
 
     private void setUpViews() {
-        appDescription1.setText(Html.fromHtml(getResources().getString(R.string.app_info_part1)));
-        appDescription2.setText(Html.fromHtml(getResources().getString(R.string.app_info_part2)));
+
     }
 
     private void assignListener() {
@@ -275,11 +270,11 @@ public class LoginActivity extends Activity {
 
                         JSONObject jsonArray = null;
 
-                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        Intent intent = new Intent(LoginActivity.this, ByscoteMainActivity.class);
                         intent.putExtra("UserData", user);
                         startActivity(intent);
                         finish();
-                        Log.i("Response", response.toString());
+                        Log.i("Response", response);
 
 //                        try {
 //
@@ -341,7 +336,7 @@ public class LoginActivity extends Activity {
              * adding parameters to the request
              **/
             @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
+            protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<String, String>();
 
                 params.put("id",user.id);

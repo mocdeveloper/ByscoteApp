@@ -6,7 +6,7 @@
     android:background="#212121"
     android:orientation="vertical">
 
-    <ScrollView
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="50dp">
@@ -90,7 +90,11 @@
                     android:id="@+id/circle_indicator_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:activeColor="#ffffff"
+
                     android:layout_centerInParent="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="4dp"
                     android:layout_gravity="center"
                     android:gravity="center" />
             </LinearLayout>
@@ -116,6 +120,7 @@
                 android:paddingLeft="4dp">
 
                 <TextView
+                    android:id="@+id/t1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Continue Watching"
@@ -151,6 +156,7 @@
                 android:paddingLeft="4dp">
 
                 <TextView
+                    android:id="@+id/t2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Recently Added"
@@ -186,6 +192,7 @@
                 android:paddingLeft="4dp">
 
                 <TextView
+                    android:id="@+id/t3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Fantasy"
@@ -221,6 +228,7 @@
                 android:paddingLeft="4dp">
 
                 <TextView
+                    android:id="@+id/t4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Action"
@@ -247,6 +255,7 @@
             </android.support.v7.widget.RecyclerView>
 
             <TextView
+                android:id="@+id/t5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Categories"
@@ -273,5 +282,5 @@
                 android:background="#595757"
                 android:paddingBottom="4dp" />
         </LinearLayout>
-    </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
 </LinearLayout>

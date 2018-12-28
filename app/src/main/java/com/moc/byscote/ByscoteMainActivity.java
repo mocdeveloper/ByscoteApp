@@ -8,12 +8,10 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import com.moc.byscote.fragments.HomeFragment;
 import com.moc.byscote.fragments.MenuFragment;
 import com.moc.byscote.fragments.MyListFragment;
-import com.moc.byscote.fragments.SeriesListFragment;
 import com.moc.byscote.model.CategoryList;
 import com.moc.byscote.model.MenuModel;
 
@@ -56,7 +54,7 @@ public class ByscoteMainActivity extends AppCompatActivity {
                         args.putString("category_title", "My List");
 
                         fragment.setArguments(args);
-                        ft.replace(R.id.mainFrame, fragment).addToBackStack("Series");
+                        ft.replace(R.id.mainFrame, fragment);
                         ft.commit();
 
                     }
@@ -69,7 +67,7 @@ public class ByscoteMainActivity extends AppCompatActivity {
                     if (fragment != null) {
                         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
 
-                        ft.replace(R.id.mainFrame, fragment).addToBackStack("Menu");
+                        ft.replace(R.id.mainFrame, fragment);
                         ft.commit();
 
                     }

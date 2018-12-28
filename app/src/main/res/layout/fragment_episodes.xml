@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2b1e42"
+    android:background="#212121"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
@@ -16,6 +16,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                android:text="Details"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -33,14 +45,41 @@
                 android:id="@+id/txt_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="12dp"
+                android:text="ခ်စ္တတ္ေသာ မိန္းကေလးနွင့္ အခ်စ္ငတ္ေသာ ေကာင္ေလးတစ္ေယာက္တို႔ရဲ ႔ ဆြတ္ပ်ံဖြယ္ အလြမ္းဇာတ္ေလး ျဖစ္ပါတယ္။ အဆင္မေျပမွဳ အလြဲေပါင္းမ်ားစြာၾကားထဲမွ ဘဝအေမာေျပေစမည့္ ဟာသဇာတ္လမ္း .. ။"
                 android:textColor="#ffffff" />
 
-            <Button
-                android:id="@+id/btn_download"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Download" />
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+            <ImageView
+                android:id="@+id/img_mylist"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_add"/>
+            <TextView
+                android:id="@+id/btn_mylist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#212121"
+                android:textColor="#ffffff"
+                android:text="My List" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="12dp"
+                android:textStyle="bold"
+                android:text="More Like This"/>
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recycler_view"
