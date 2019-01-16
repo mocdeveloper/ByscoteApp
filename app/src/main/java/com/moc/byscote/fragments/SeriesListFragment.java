@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -57,6 +58,7 @@ public class SeriesListFragment extends Fragment {
     String series_list_url, category_id;
     TextView tv_category_title;
     String category_title;
+    ImageView img_back;
 
 
     public SeriesListFragment() {
@@ -80,6 +82,14 @@ public class SeriesListFragment extends Fragment {
 
         recyclerview = view.findViewById(R.id.recycler_view);
         tv_category_title = view.findViewById(R.id.tv_category_title);
+
+        img_back = view.findViewById(R.id.img_back);
+        img_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+            }
+        });
 
         tv_category_title.setText(category_title);
         Series_List = new ArrayList<SeriesList>();

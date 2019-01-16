@@ -51,9 +51,9 @@
     <string name="video_url">https://cdn.byscote.com/D_My-lawyer,Mr.Joe_E1/index.m3u8</string>
     <string name="video_url2">https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8</string>
     <string name="title_activity_byscote_main">ByscoteMainActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_mylist">My List</string>
-    <string name="title_menu">Menu</string>
+    <string name="title_home">ပင္မ</string>
+    <string name="title_mylist">အၾကိဳက္</string>
+    <string name="title_menu">မာတိကာ</string>
 
     <string name="title_activity_welcome">Home Screen</string>
     <string name="next">NEXT</string>

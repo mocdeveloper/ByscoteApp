@@ -2,6 +2,7 @@ package com.moc.byscote.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.NetworkResponse;
@@ -41,6 +43,7 @@ public class MenuNotiFragment extends Fragment {
     Fragment fragment;
     String series_list_url, category_id;
     Button btn_pay;
+    ImageView img_back;
 
     public MenuNotiFragment() {
         // Required empty public constructor
@@ -59,10 +62,20 @@ public class MenuNotiFragment extends Fragment {
 
 
         recyclerview = view.findViewById(R.id.recyclerview);
+        recyclerview.setNestedScrollingEnabled(false);
 
         Series_List = new ArrayList<SeriesList>();
 
         callSeriesList();
+
+        img_back = view.findViewById(R.id.img_back);
+        img_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+            }
+        });
+
 
         btn_pay = view.findViewById(R.id.btn_pay);
         btn_pay.setOnClickListener(new View.OnClickListener() {

@@ -15,22 +15,38 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:text="ကြၽန္ုပ္ အေကာင့္"
-                android:textColor="#ffffff"
-                android:textSize="17dp" />
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:paddingLeft="12dp"
+                    android:src="@drawable/ic_keyboard_back" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="ကြၽန္ုပ္ အေကာင့္"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
                 android:textColorHint="#737070"
                 android:padding="4dp"
                 android:hint="သုံးသူ အမည္">
@@ -54,7 +70,7 @@
                 android:layout_marginTop="8dp"
                 android:textColorHint="#737070"
                 android:padding="4dp"
-                android:hint="အေကာင့္">
+                android:hint="အေကာင့္">
 
                 <EditText
                     android:layout_width="match_parent"
@@ -75,7 +91,7 @@
                 android:textColorHint="#737070"
                 android:layout_marginTop="8dp"
                 android:padding="4dp"
-                android:hint="အေကာင့္ စဖြင့္ေသာရက္">
+                android:hint="အေကာင့္ စဖြင့္ေသာရက္">
 
                 <EditText
                     android:layout_width="match_parent"
@@ -115,7 +131,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginRight="16dp"
                 android:gravity="center"
-                android:text="အခ်က္အလက္တခ်ိဳ ႔ ကိုထည့္သြင္းျခင္းျဖင့္ အသစ္အသစ္ေသာ ကမ္းလွမ္းခ်က္မ်ားနွင့္ ပရိုမိုးရွင္းမ်ားအားလုံးကို အခ်ိန္နွင့္ တေျပးညီ ရနိုင္ပါမည္ "
+                android:text="အခ်က္အလက္တခ်ိဳ႕ ကိုထည့္သြင္းျခင္းျဖင့္ အသစ္အသစ္ေသာ ကမ္းလွမ္းခ်က္မ်ားႏွင့္ ပ႐ိုမိုးရွင္းမ်ားအားလုံးကို အခ်ိန္ႏွင့္ တေျပးညီ ရႏိုင္ပါမည္ "
                 android:textColor="#ffffff"
                 android:textSize="11dp" />
 

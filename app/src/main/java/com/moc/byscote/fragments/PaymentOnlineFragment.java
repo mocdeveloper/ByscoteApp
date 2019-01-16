@@ -3,11 +3,13 @@ package com.moc.byscote.fragments;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.google.android.exoplayer2.ui.PlayerView;
 import com.moc.byscote.R;
@@ -17,6 +19,7 @@ public class PaymentOnlineFragment extends Fragment {
     View view;
     CardView card_telenor,card_ooredoo,card_welink;
     Fragment fragment;
+    ImageView img_back;
 
     public PaymentOnlineFragment() {
         // Required empty public constructor
@@ -34,6 +37,14 @@ public class PaymentOnlineFragment extends Fragment {
         card_ooredoo = view.findViewById(R.id.card_ooredoo);
         card_welink = view.findViewById(R.id.card_welink);
 
+
+        img_back = view.findViewById(R.id.img_back);
+        img_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getFragmentManager().popBackStackImmediate();
+            }
+        });
 
         card_telenor.setOnClickListener(new View.OnClickListener() {
             @Override

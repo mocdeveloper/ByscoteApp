@@ -20,17 +20,19 @@ import android.widget.TextView;
 
 import com.moc.byscote.Util.PrefManager;
 
+import io.github.kshitij_jain.indicatorview.IndicatorView;
+
 public class WelcomeActivity extends AppCompatActivity {
 
     private ViewPager viewPager;
     private MyViewPagerAdapter myViewPagerAdapter;
-    private LinearLayout dotsLayout;
     private TextView[] dots;
     private int[] layouts;
+    IndicatorView mIndicatorView;
     private Button btnSkip;
     private PrefManager prefManager;
     Button btn_continue;
-    TextView txt_not_now;
+   // TextView txt_not_now;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +54,13 @@ public class WelcomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_welcome);
 
         viewPager = findViewById(R.id.view_pager);
-        dotsLayout = findViewById(R.id.layoutDots);
+      //  dotsLayout = findViewById(R.id.layoutDots);
+
+        mIndicatorView = findViewById(R.id.circle_indicator_view);
+
+        mIndicatorView.setPageIndicators(4);
+
+
         btnSkip = findViewById(R.id.btn_skip);
 
         // layouts of all welcome sliders
@@ -64,7 +72,7 @@ public class WelcomeActivity extends AppCompatActivity {
                 R.layout.welcome_slide4};
 
         // adding bottom dots
-        addBottomDots(0);
+     //   addBottomDots(0);
 
         // making notification bar transparent
         changeStatusBarColor();
@@ -100,24 +108,24 @@ public class WelcomeActivity extends AppCompatActivity {
 //        });
     }
 
-    private void addBottomDots(int currentPage) {
-        dots = new TextView[layouts.length];
-
-        int[] colorsActive = getResources().getIntArray(R.array.array_dot_active);
-        int[] colorsInactive = getResources().getIntArray(R.array.array_dot_inactive);
-
-        dotsLayout.removeAllViews();
-        for (int i = 0; i < dots.length; i++) {
-            dots[i] = new TextView(this);
-            dots[i].setText(Html.fromHtml("&#8226;"));
-            dots[i].setTextSize(35);
-            dots[i].setTextColor(colorsInactive[currentPage]);
-            dotsLayout.addView(dots[i]);
-        }
-
-        if (dots.length > 0)
-            dots[currentPage].setTextColor(colorsActive[currentPage]);
-    }
+//    private void addBottomDots(int currentPage) {
+//        dots = new TextView[layouts.length];
+//
+//        int[] colorsActive = getResources().getIntArray(R.array.array_dot_active);
+//        int[] colorsInactive = getResources().getIntArray(R.array.array_dot_inactive);
+//
+//        dotsLayout.removeAllViews();
+//        for (int i = 0; i < dots.length; i++) {
+//            dots[i] = new TextView(this);
+//            dots[i].setText(Html.fromHtml("&#8226;"));
+//            dots[i].setTextSize(35);
+//            dots[i].setTextColor(colorsInactive[currentPage]);
+//            dotsLayout.addView(dots[i]);
+//        }
+//
+//        if (dots.length > 0)
+//            dots[currentPage].setTextColor(colorsActive[currentPage]);
+//    }
 
     private int getItem(int i) {
         return viewPager.getCurrentItem() + i;
@@ -134,8 +142,8 @@ public class WelcomeActivity extends AppCompatActivity {
 
         @Override
         public void onPageSelected(int position) {
-            addBottomDots(position);
-
+           // addBottomDots(position);
+            mIndicatorView.setCurrentPage(position);
             // changing the next button text 'NEXT' / 'GOT IT'
             if (position == layouts.length - 1) {
                 // last page. make button text to GOT IT
@@ -146,7 +154,7 @@ public class WelcomeActivity extends AppCompatActivity {
             } else {
                 // still pages are left
               //  btnNext.setText(getString(R.string.next));
-                btnSkip.setText("Skip");
+                btnSkip.setText("ေက်ာ္မည္");
                 btnSkip.setEnabled(true);
                 btnSkip.setVisibility(View.VISIBLE);
             }
@@ -190,7 +198,7 @@ public class WelcomeActivity extends AppCompatActivity {
             View view = layoutInflater.inflate(layouts[position], container, false);
             if(position==3){
                 btn_continue = view.findViewById(R.id.btn_continue);
-                txt_not_now = view.findViewById(R.id.txt_not_now);
+               // txt_not_now = view.findViewById(R.id.txt_not_now);
 
                 btn_continue.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -199,12 +207,12 @@ public class WelcomeActivity extends AppCompatActivity {
                     }
                 });
 
-                txt_not_now.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        launchHomeScreen();
-                    }
-                });
+//                txt_not_now.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        launchHomeScreen();
+//                    }
+//                });
             }
             container.addView(view);
 

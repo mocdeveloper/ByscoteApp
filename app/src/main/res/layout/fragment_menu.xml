@@ -15,15 +15,31 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#ffffff"
-                android:textSize="20dp"
-                android:gravity="center"
-                android:layout_margin="16dp"
-                android:textStyle="bold"
-                android:text="Menu"/>
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:paddingLeft="12dp"
+                    android:src="@drawable/ic_keyboard_back" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="မာတိကာ"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
 
             <RelativeLayout
                 android:id="@+id/rl_account"
@@ -31,7 +47,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:layout_marginTop="24dp">
+                android:layout_marginTop="42dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -43,7 +59,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="#ffffff"
                     android:textSize="17dp"
-                    android:text="My Account"
+                    android:text="အေကာင့္"
                     android:gravity="center"
                     android:layout_marginLeft="38dp"/>
 
@@ -76,14 +92,14 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/ic_settings_white"/>
+                    android:src="@mipmap/payment"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#ffffff"
                     android:textSize="17dp"
-                    android:text="Payment"
+                    android:text="ေငြေပးေခ်ရန္"
                     android:gravity="center"
                     android:layout_marginLeft="38dp"/>
 
@@ -123,7 +139,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="#ffffff"
                     android:textSize="17dp"
-                    android:text="Promotion"
+                    android:text="ပရိုမိုးရွင္း"
                     android:gravity="center"
                     android:layout_marginLeft="38dp"/>
 
@@ -163,7 +179,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="#ffffff"
                     android:textSize="17dp"
-                    android:text="Notifications"
+                    android:text="အသိေပးစာမ်ား"
                     android:gravity="center"
                     android:layout_marginLeft="38dp"/>
 
@@ -191,7 +207,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="#ffffff"
                     android:textSize="17dp"
-                    android:text="Sign Out"
+                    android:text="ထြက္မည္"
                     android:gravity="center"
                     android:layout_marginTop="16dp"
                     android:layout_marginLeft="24dp"/>

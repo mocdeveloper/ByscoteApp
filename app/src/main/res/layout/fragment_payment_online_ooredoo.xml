@@ -13,9 +13,35 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="42dp"
-
             android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:paddingLeft="12dp"
+                    android:src="@drawable/ic_keyboard_back" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="24dp"
+                    android:gravity="center"
+                    android:text="Ooredoo ဖုန္းေဘလ္ျဖင့္"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -24,6 +50,7 @@
                 android:text="Ooredoo ဖုန္းေဘလ္ျဖင့္ေငြသြင္းရန္"
                 android:textColor="#ffffff"
                 android:layout_margin="8dp"
+                android:paddingTop="42dp"
                 android:textSize="16dp" />
 
             <LinearLayout

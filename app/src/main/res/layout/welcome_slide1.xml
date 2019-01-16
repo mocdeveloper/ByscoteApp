@@ -4,12 +4,7 @@
     android:layout_height="match_parent"
     android:background="#ffffff">
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
-        android:src="@drawable/webapp_logo"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +17,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome to Byscote"
+            android:text="ဘိုင္စကုတ္မွ ႀကိဳဆိုပါတယ္"
             android:textColor="@android:color/black"
             android:textSize="@dimen/slide_title"
             android:textStyle="bold" />
@@ -30,10 +25,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="28dp"
             android:paddingLeft="@dimen/desc_padding"
             android:paddingRight="@dimen/desc_padding"
-            android:text="Here's how it works"
+            android:text="အသံုးျပဳနည္း"
             android:textAlignment="center"
             android:textColor="#a1a1a1"
             android:textSize="18dp" />

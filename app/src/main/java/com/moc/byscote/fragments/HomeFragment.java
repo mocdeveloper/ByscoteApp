@@ -109,6 +109,7 @@ public class HomeFragment extends Fragment {
 
         img_left_menu = view.findViewById(R.id.img_left_menu);
         mIndicatorView = view.findViewById(R.id.circle_indicator_view);
+        mIndicatorView.setVisibility(View.INVISIBLE);
 
         scrollView = view.findViewById(R.id.picker);
         scrollView.setOffscreenItems(0); //Reserve extra space equal to (childSize * count) on each side of the view
@@ -271,7 +272,7 @@ public class HomeFragment extends Fragment {
 
                     Bundle args = new Bundle();
                     args.putString("category_id", Categories_List.get(0).getCategory_id());
-                    args.putString("category_title", "Continue Watching");
+                    args.putString("category_title", "ဆက္လက္ၾကည့္ရွဳ မည္");
 
                     fragment.setArguments(args);
                     ft.replace(R.id.mainFrame, fragment).addToBackStack("Series");
@@ -292,7 +293,7 @@ public class HomeFragment extends Fragment {
 
                     Bundle args = new Bundle();
                     args.putString("category_id", Categories_List.get(0).getCategory_id());
-                    args.putString("category_title", "Recently Added");
+                    args.putString("category_title", "ေနာက္ဆုံးထြက္ကား");
 
                     fragment.setArguments(args);
                     ft.replace(R.id.mainFrame, fragment).addToBackStack("Series");
@@ -313,7 +314,7 @@ public class HomeFragment extends Fragment {
 
                     Bundle args = new Bundle();
                     args.putString("category_id", Categories_List.get(0).getCategory_id());
-                    args.putString("category_title", "Fantasy");
+                    args.putString("category_title", "စိတ္ကူးယဥ္ကား");
 
                     fragment.setArguments(args);
                     ft.replace(R.id.mainFrame, fragment).addToBackStack("Series");
@@ -335,7 +336,7 @@ public class HomeFragment extends Fragment {
 
                     Bundle args = new Bundle();
                     args.putString("category_id", Categories_List.get(0).getCategory_id());
-                    args.putString("category_title", "Action");
+                    args.putString("category_title", "ဇာတ္ၾကမ္းကား");
 
                     fragment.setArguments(args);
                     ft.replace(R.id.mainFrame, fragment).addToBackStack("Series");
@@ -839,6 +840,7 @@ public class HomeFragment extends Fragment {
                             scrollView.setAdapter(pagerAdapter);
                             scrollView.scrollToPosition(1);
                             mIndicatorView.setCurrentPage(1);
+                            mIndicatorView.setVisibility(View.VISIBLE);
 
                             recycler_adapter3 = new SeriesListAdapter2(getActivity(), Series_List);
                             LinearLayoutManager layoutManager2

@@ -4,46 +4,41 @@
     android:layout_height="match_parent"
     android:background="#ffffff">
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
-        android:src="@drawable/webapp_logo"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:paddingTop="62dp"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="180dp"
+            android:paddingTop="28dp"
             android:gravity="center"
-            android:layout_margin="26dp"
-            android:src="@mipmap/ic_slide4" />
+            android:layout_margin="8dp"
+            android:src="@mipmap/onboarding_notifications" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Stay Connected with us"
+            android:layout_marginTop="28dp"
+            android:text="ဒီမွာ ဖတ္ရႈပါ"
             android:textColor="@android:color/black"
             android:textSize="@dimen/slide_title"
             android:textStyle="bold" />
 
         <TextView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="18dp"
             android:paddingLeft="@dimen/desc_padding"
             android:paddingRight="@dimen/desc_padding"
-            android:text="Get Alerts when new movies are added and receive updates regarding your account. You can always adjust this in settings"
+            android:text="ရုပ္ရွင္ကားသစ္မ်ားႏွင့္ အေၾကာင္းအရာသစ္မ်ားသိရွိနိုင္ရန္ အသိေပးစာမ်ား ဒီမွာဖတ္ရႈပါ။ \nSettings တြင္ျပန္လည္ခ်ိန္ညွိနိုင္ပါသည္"
             android:textAlignment="center"
             android:textColor="#a1a1a1"
-            android:textSize="18dp" />
+            android:textSize="16dp" />
 
         <Button
             android:id="@+id/btn_continue"
@@ -54,17 +49,17 @@
             android:gravity="center"
             android:paddingLeft="26dp"
             android:paddingRight="26dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="36dp"
             android:textColor="#ffffff"
             android:background="@drawable/button_press2"/>
 
-        <TextView
-            android:id="@+id/txt_not_now"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:textSize="16dp"
-            android:text="Not now"/>
+        <!--<TextView-->
+            <!--android:id="@+id/txt_not_now"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="24dp"-->
+            <!--android:textSize="16dp"-->
+            <!--android:text="Not now"/>-->
     </LinearLayout>
 
 </RelativeLayout>

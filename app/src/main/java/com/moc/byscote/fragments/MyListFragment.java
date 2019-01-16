@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -13,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.volley.DefaultRetryPolicy;
@@ -34,6 +36,8 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import static com.moc.byscote.ByscoteMainActivity.navigation;
+
 public class MyListFragment extends Fragment {
 
     View view;
@@ -44,6 +48,7 @@ public class MyListFragment extends Fragment {
     String series_list_url, category_id;
     TextView tv_category_title;
     String category_title;
+    ImageView img_back;
 
 
     public MyListFragment() {
@@ -68,7 +73,17 @@ public class MyListFragment extends Fragment {
         recyclerview = view.findViewById(R.id.recycler_view);
         tv_category_title = view.findViewById(R.id.tv_category_title);
 
-        tv_category_title.setText(category_title);
+        img_back = view.findViewById(R.id.img_back);
+        img_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                navigation.setSelectedItemId(R.id.navigation_home);
+
+            }
+        });
+
+      //  tv_category_title.setText(category_title);
         Series_List = new ArrayList<SeriesList>();
 
         callSeriesList();

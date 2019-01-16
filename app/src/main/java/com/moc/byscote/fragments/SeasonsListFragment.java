@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.widget.GridLayoutManager;
@@ -84,6 +85,7 @@ public class SeasonsListFragment extends Fragment {
     String mockey,signature,policy,key_pair_id;
     Batch batch;
     DownloadManager downloadManager;
+    ImageView img_back;
 
 
     public SeasonsListFragment() {
@@ -114,6 +116,14 @@ public class SeasonsListFragment extends Fragment {
 
         recyclerview = view.findViewById(R.id.recycler_view);
         recyclerview.setNestedScrollingEnabled(false);
+
+        img_back = view.findViewById(R.id.img_back);
+        img_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getFragmentManager().popBackStackImmediate();
+            }
+        });
 
         Handler handler = new Handler();
         downloadManager = DownloadManagerBuilder

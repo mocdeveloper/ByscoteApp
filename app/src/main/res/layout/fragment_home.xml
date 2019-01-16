@@ -8,12 +8,12 @@
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="50dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
             android:orientation="vertical">
 
             <!--<RelativeLayout-->
@@ -41,8 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#7a55eb"
-                android:paddingTop="12dp"
-                android:paddingBottom="8dp">
+                android:paddingTop="12dp">
 
                 <ImageView
                     android:id="@+id/logo"
@@ -54,7 +53,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Categories"
+                    android:text="အမ်ိဳးအစားမ်ား"
                     android:layout_marginTop="8dp"
                     android:textColor="#ffffff"
                     android:layout_toLeftOf="@+id/img_left_menu"/>
@@ -88,15 +87,16 @@
 
                 <io.github.kshitij_jain.indicatorview.IndicatorView
                     android:id="@+id/circle_indicator_view"
-                    android:layout_width="wrap_content"
+                    android:layout_width="210dp"
                     android:layout_height="wrap_content"
                     app:activeColor="#ffffff"
-
-                    android:layout_centerInParent="true"
+                    app:inactiveColor="#c2baba"
+                    app:indicatorSize="8dp"
+                    android:layout_marginLeft="36dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginBottom="4dp"
-                    android:layout_gravity="center"
-                    android:gravity="center" />
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
             </LinearLayout>
             <!--<LinearLayout-->
             <!--android:layout_width="match_parent"-->
@@ -115,7 +115,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="12dp"
-                android:layout_marginBottom="4dp"
                 android:orientation="horizontal"
                 android:paddingLeft="4dp">
 
@@ -123,7 +122,7 @@
                     android:id="@+id/t1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Continue Watching"
+                    android:text="ဆက္လက္ၾကည္႕ရႈမည္"
                     android:textColor="#ffffff"
                     android:textStyle="bold"
                     android:textSize="17dp" />
@@ -150,8 +149,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp"
                 android:orientation="horizontal"
                 android:paddingLeft="4dp">
 
@@ -159,7 +157,7 @@
                     android:id="@+id/t2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Recently Added"
+                    android:text="ေနာက္ဆံုးထြက္ကား"
                     android:textColor="#ffffff"
                     android:textStyle="bold"
                     android:textSize="17dp" />
@@ -186,8 +184,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp"
                 android:orientation="horizontal"
                 android:paddingLeft="4dp">
 
@@ -195,7 +192,7 @@
                     android:id="@+id/t3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fantasy"
+                    android:text="စိတ္ကူးယဥ္ကား"
                     android:textColor="#ffffff"
                     android:textStyle="bold"
                     android:textSize="17dp" />
@@ -222,8 +219,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp"
                 android:orientation="horizontal"
                 android:paddingLeft="4dp">
 
@@ -231,10 +227,10 @@
                     android:id="@+id/t4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Action"
+                    android:text="ဇာတ္ၾကမ္းကား"
                     android:textColor="#ffffff"
-                    android:textStyle="bold"
-                    android:textSize="17dp" />
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/v4"
@@ -258,7 +254,7 @@
                 android:id="@+id/t5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Categories"
+                android:text="အမ်ိဳးအစားမ်ား"
                 android:textStyle="bold"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="24dp"

@@ -1,5 +1,7 @@
 package com.moc.byscote;
 
+import android.app.FragmentManager;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -7,6 +9,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.MenuItem;
 
 import com.moc.byscote.fragments.HomeFragment;
@@ -17,6 +20,8 @@ import com.moc.byscote.model.MenuModel;
 
 import java.util.ArrayList;
 
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 public class ByscoteMainActivity extends AppCompatActivity {
 
     RecyclerView recyclerview;
@@ -24,6 +29,7 @@ public class ByscoteMainActivity extends AppCompatActivity {
     Fragment fragment = null;
     String category_list_url;
     MenuModel childModel;
+    public static BottomNavigationView navigation;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -85,7 +91,7 @@ public class ByscoteMainActivity extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
-        BottomNavigationView navigation = findViewById(R.id.navigation);
+        navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         fragment = new HomeFragment();
@@ -98,4 +104,37 @@ public class ByscoteMainActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+
+
+        super.onBackPressed();
+
+//        FragmentManager fm = getFragmentManager();
+//
+//        if (fm.getBackStackEntryCount() > 0) {
+//
+//            Log.i("MainActivity", "popping backstack");
+//            fm.popBackStack();
+//
+//        } else {
+//
+//            if(navigation.getSelectedItemId() == R.id.navigation_list){
+//
+//                navigation.setSelectedItemId(R.id.navigation_home);
+//
+//            }else if(navigation.getSelectedItemId() == R.id.navigation_menu){
+//
+//                navigation.setSelectedItemId(R.id.navigation_home);
+//
+//            }else  super.onBackPressed(); }
+
+        }
+
+
+
+//    @Override
+//    protected void attachBaseContext(Context newBase) {
+//        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+//    }
 }

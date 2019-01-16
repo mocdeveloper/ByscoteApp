@@ -1,9 +1,13 @@
 package com.moc.byscote;
 
 import android.app.Application;
+import android.content.Context;
 
 import com.downloader.PRDownloader;
 import com.downloader.PRDownloaderConfig;
+
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class ByscoteApp extends Application {
 
@@ -14,6 +18,13 @@ public class ByscoteApp extends Application {
                 .setDatabaseEnabled(true)
                 .build();
         PRDownloader.initialize(this, config);
+
+        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
+                .setDefaultFontPath("fonts/noto_serif_regular.ttf")
+                .setFontAttrId(R.attr.fontPath)
+                .build()
+        );
     }
+
 
 }

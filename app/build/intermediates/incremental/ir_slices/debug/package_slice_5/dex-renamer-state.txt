@@ -1,4 +1,4 @@
-#Fri Dec 28 14:31:43 MMT 2018
+#Mon Jan 14 14:13:23 MMT 2019
 base.0=/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/transforms/dexMerger/debug/5
 path.0=classes.dex
 renamed.0=classes.dex

@@ -11,7 +11,7 @@
 		android:scaleType="centerCrop"
 		android:adjustViewBounds="false"
 		android:cropToPadding="true"
-		android:src="@mipmap/homebg" />
+		android:src="@mipmap/loading_image" />
 
 	<ImageView
 		android:layout_width="wrap_content"

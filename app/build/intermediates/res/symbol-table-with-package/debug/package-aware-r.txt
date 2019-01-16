@@ -274,6 +274,7 @@ attr firstBaselineToTopHeight
 attr floatingActionButtonStyle
 attr font
 attr fontFamily
+attr fontPath
 attr fontProviderAuthority
 attr fontProviderCerts
 attr fontProviderFetchStrategy
@@ -1186,8 +1187,10 @@ drawable button_focus
 drawable button_press
 drawable button_press2
 drawable button_press3
+drawable button_press4
 drawable button_unfocused
 drawable card_background
+drawable card_background_select
 drawable com_facebook_auth_dialog_background
 drawable com_facebook_auth_dialog_cancel_background
 drawable com_facebook_auth_dialog_header_background
@@ -1280,6 +1283,7 @@ drawable ic_file_download
 drawable ic_home
 drawable ic_home_black_24dp
 drawable ic_home_white
+drawable ic_keyboard_back
 drawable ic_launcher
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1348,6 +1352,7 @@ drawable side_nav_bar
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable webapp_logo
+font noto_serif_regular
 id ALT
 id CTRL
 id ChasingDots
@@ -1412,6 +1417,7 @@ id btn_pay
 id btn_skip
 id button
 id buttonPanel
+id calligraphy_tag_id
 id cancel_action
 id cancel_button
 id card_mpu
@@ -1518,6 +1524,7 @@ id icon_only
 id ifRoom
 id image
 id imageView
+id img_back
 id img_category
 id img_left_menu
 id img_loading
@@ -1532,8 +1539,10 @@ id iv_auto_image_slider
 id labeled
 id large
 id largeLabel
-id layoutDots
+id layout_mpu
+id layout_online
 id layout_pay
+id layout_shop
 id lblListHeader
 id lblListHeaderImage
 id lblListItem
@@ -1706,7 +1715,6 @@ id tv_noti_description
 id tv_noti_title
 id tv_series_title
 id txt_description
-id txt_not_now
 id uniform
 id unknown
 id unlabeled
@@ -1779,6 +1787,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_byscote_main
 layout activity_login
+layout activity_login2
 layout activity_main
 layout activity_notification
 layout activity_player
@@ -1839,6 +1848,8 @@ layout list_group_header
 layout list_item
 layout loading_dialog
 layout loading_view
+layout login_slide1
+layout login_slide2
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout nav_header
@@ -1893,6 +1904,7 @@ mipmap big_screen
 mipmap category_one
 mipmap category_three
 mipmap category_two
+mipmap fblogin
 mipmap homebg
 mipmap ic_123_logo
 mipmap ic_arrow_right_white
@@ -1925,11 +1937,20 @@ mipmap ic_user
 mipmap ic_user_account
 mipmap ic_view_all
 mipmap ic_welink_logo
+mipmap infinity
+mipmap loading_image
 mipmap login_bg
+mipmap movie_icon
+mipmap movies
 mipmap new_icon
+mipmap onboarding_mylist
+mipmap onboarding_notifications
+mipmap payment
 mipmap qr_sample
+mipmap sightseeing
 mipmap slider1
 mipmap three_dots
+mipmap welink_logo
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

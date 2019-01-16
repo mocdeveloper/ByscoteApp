@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.2.1"
-    timestamp="1545984961525"
+    timestamp="1547622145241"
     token="7160797291970536436"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -65,7 +65,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1545984961525"
+        timestamp="1547622145241"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/wathon/Development/android-development/ByscoteApp/app/build/intermediates/split-apk/debug/slices/slice_1.apk"

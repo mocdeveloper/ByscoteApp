@@ -1,97 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#212121">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#212121"
-    android:layout_marginBottom="50dp"
-    android:orientation="vertical">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:text="Notifications"
-        android:textColor="#ffffff"
-        android:textSize="17dp" />
-
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="8dp"
-        android:orientation="horizontal"
-        android:weightSum="2.5">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_marginTop="22dp"
-            android:layout_weight="1.2"
-            android:gravity="center"
-            android:src="@drawable/ic_settings_white"
-            android:textColor="#ffffff" />
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:background="#212121"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="16dp"
-            android:layout_weight="1.3">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            <TextView
+            <ImageView
+                android:id="@+id/img_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Account is about to expire"
-                android:layout_marginTop="8dp"
-                android:textColor="#ff0000"/>
+                android:layout_marginTop="18dp"
+                android:paddingLeft="12dp"
+                android:src="@drawable/ic_keyboard_back" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/tv_category_title"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Your account will expire in 2 days"
-                android:textSize="16dp"
-                android:layout_marginTop="4dp"
-                android:textColor="#ffffff"/>
-
-            <Button
-                android:id="@+id/btn_pay"
-                android:layout_width="120dp"
-                android:layout_height="40dp"
-                android:padding="8dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/button_press2"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:text="အသိေပးစာမ်ား"
                 android:textColor="#ffffff"
-                android:text="ေပးသြင္းမည္"
-                android:layout_gravity="left"/>
-
-
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2.5">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="22dp"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:src="@drawable/ic_settings_white"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1.3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Account is about to expire"
+                    android:textColor="#ff0000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="၂ရက္အတြင္း သက္တမ္းကုန္ေတာ့မည္။"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/btn_pay"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/button_press2"
+                    android:padding="8dp"
+                    android:text="ေပးသြင္းမည္"
+                    android:textColor="#ffffff" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="16dp"
+            android:background="#ffffff" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_margin="16dp"
-        android:background="#ffffff"/>
-
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </android.support.v7.widget.RecyclerView>
-
-
-</LinearLayout>
-</ScrollView>
+</android.support.v4.widget.NestedScrollView>

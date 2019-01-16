@@ -2,19 +2,25 @@ package com.moc.byscote.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.moc.byscote.R;
+
+import static com.moc.byscote.ByscoteMainActivity.navigation;
 
 public class MenuFragment extends Fragment {
 
     View view;
     RelativeLayout rl_account,rl_payment,rl_promo,rl_noti;
     Fragment fragment = null;
+    ImageView img_back;
+
 
     public MenuFragment() {
         // Required empty public constructor
@@ -33,6 +39,16 @@ public class MenuFragment extends Fragment {
         rl_payment = view.findViewById(R.id.rl_payment);
         rl_promo = view.findViewById(R.id.rl_promo);
         rl_noti = view.findViewById(R.id.rl_noti);
+
+        img_back = view.findViewById(R.id.img_back);
+        img_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                navigation.setSelectedItemId(R.id.navigation_home);
+
+            }
+        });
 
         rl_account.setOnClickListener(new View.OnClickListener() {
             @Override

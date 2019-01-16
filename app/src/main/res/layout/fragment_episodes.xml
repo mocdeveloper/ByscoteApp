@@ -18,16 +18,32 @@
             android:orientation="vertical">
 
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#ffffff"
-                android:textSize="20dp"
-                android:gravity="center"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="8dp"
-                android:textStyle="bold"
-                android:text="Details"/>
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:paddingLeft="12dp"
+                    android:src="@drawable/ic_keyboard_back" />
+
+                <TextView
+                    android:id="@+id/tv_category_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="Details"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -74,18 +90,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#ffffff"
-                android:textSize="20dp"
+                android:textSize="18dp"
                 android:gravity="left"
                 android:layout_marginTop="24dp"
                 android:layout_marginLeft="12dp"
                 android:textStyle="bold"
-                android:text="More Like This"/>
+                android:text="ပံုစံတူရုပ္ရွင္မ်ား"/>
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="4dp"
                 android:paddingBottom="8dp">
 
             </android.support.v7.widget.RecyclerView>

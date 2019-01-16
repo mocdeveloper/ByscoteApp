@@ -91,7 +91,9 @@
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.moc.byscote.NotificationActivity" />
-        <activity android:name="com.moc.byscote.PlayerActivity" />
+        <activity
+            android:name="com.moc.byscote.PlayerActivity"
+            android:configChanges="orientation|screenSize|layoutDirection" />
         <activity
             android:name="com.moc.byscote.ByscoteMainActivity"
             android:label="@string/title_activity_byscote_main" >
